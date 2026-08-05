@@ -14,6 +14,7 @@ interface Deal {
   storeUrl: string;
   note: string;
   lastChecked: string;
+  tags?: string[];
 }
 
 const { deal } = Astro.props as { deal: Deal };
@@ -40,7 +41,7 @@ const storeName =
 <style>
   .deal-card {
     background: var(--card);
-    border: 1px solid #232a36;
+    border: 1px solid var(--border);
     border-radius: 12px;
     padding: 1.25rem;
     display: flex;
@@ -60,7 +61,7 @@ const storeName =
   .platform {
     font-size: 0.75rem;
     color: var(--muted);
-    background: #232a36;
+    background: #eef1f4;
     padding: 0.2rem 0.6rem;
     border-radius: 999px;
     white-space: nowrap;
@@ -74,7 +75,7 @@ const storeName =
   .price {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--text);
   }
   .regular {
     color: var(--muted);
@@ -92,7 +93,7 @@ const storeName =
     margin: 0.25rem 0 0.9rem;
   }
   .checked {
-    color: #6b7484;
+    color: var(--muted);
     font-size: 0.72rem;
     margin: 0.6rem 0 0;
   }

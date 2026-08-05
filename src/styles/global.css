@@ -1,10 +1,11 @@
 :root {
-  --bg: #0f1115;
-  --card: #1a1f29;
-  --text: #e6e9ef;
-  --muted: #9aa3b2;
-  --accent: #1a7f5a;
-  --accent-hover: #146043;
+  --bg: #eef6f0;
+  --card: #ffffff;
+  --text: #1c2530;
+  --muted: #6b7280;
+  --accent: #15a06b;
+  --accent-hover: #128a5c;
+  --border: #e5e8ec;
 }
 
 * {
@@ -25,7 +26,7 @@ body {
 }
 
 a {
-  color: #5fb98a;
+  color: #147a52;
 }
 
 .container {

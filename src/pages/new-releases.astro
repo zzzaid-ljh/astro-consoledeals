@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import DealCard from "../components/DealCard.astro";
+import dealsData from "../data/deals.json";
+
+const deals = (dealsData.deals as any[]).filter((d) => (d.tags || []).includes("new-release"));
+const lastUpdated = dealsData.lastUpdated;
+---
+
+<BaseLayout
+  title="New Releases — ConsoleDeals"
+  description="Recently launched and upcoming console game digital editions across Nintendo Switch, PlayStation 5, and Xbox."
+>
+  <section class="hero">
+    <h1>New Releases</h1>
+    <p>
+      Recently launched and upcoming digital editions on Switch, PlayStation, and
+      Xbox. Updated {lastUpdated}. New games sit at list price at first — tap
+      through to verify the current deal before you buy.
+    </p>
+  </section>
+
+  <section class="deals-grid" aria-label="New releases">
+    {deals.map((d) => <DealCard deal={d} />)}
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 1.5rem 0 1rem;
+  }
+  .hero h1 {
+    margin: 0 0 0.5rem;
+  }
+  .hero p {
+    color: var(--muted);
+    max-width: 640px;
+  }
+  .deals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+</style>

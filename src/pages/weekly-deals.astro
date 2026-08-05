@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import DealCard from "../components/DealCard.astro";
+import dealsData from "../data/deals.json";
+
+const deals = (dealsData.deals as any[]).filter((d) => (d.tags || []).includes("weekly"));
+const lastUpdated = dealsData.lastUpdated;
+---
+
+<BaseLayout
+  title="Weekly Deals — ConsoleDeals"
+  description="Our hand-picked weekly deals on popular console games across Switch, PlayStation, Xbox, and PC."
+>
+  <section class="hero">
+    <h1>Weekly Deals</h1>
+    <p>
+      Our hand-picked selection of the week — the games worth buying right now
+      across Switch, PlayStation, Xbox, and PC. Curated {lastUpdated}. Prices
+      change constantly; always verify the live price on the store.
+    </p>
+  </section>
+
+  <section class="deals-grid" aria-label="Weekly deals">
+    {deals.map((d) => <DealCard deal={d} />)}
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 1.5rem 0 1rem;
+  }
+  .hero h1 {
+    margin: 0 0 0.5rem;
+  }
+  .hero p {
+    color: var(--muted);
+    max-width: 640px;
+  }
+  .deals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+</style>

@@ -51,7 +51,7 @@ const linkText = text ?? cta ?? `在 ${cfg.label} 查看`;
   .aff-link {
     display: inline-block;
     padding: 0.55rem 1.1rem;
-    background: #1a7f5a;
+    background: var(--accent);
     color: #fff !important;
     border-radius: 8px;
     text-decoration: none;
@@ -60,6 +60,6 @@ const linkText = text ?? cta ?? `在 ${cfg.label} 查看`;
     transition: background 0.15s ease;
   }
   .aff-link:hover {
-    background: #146043;
+    background: var(--accent-hover);
   }
 </style>
