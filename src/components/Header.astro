@@ -4,6 +4,9 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="/" class="logo">🎮 ConsoleDeals</a>
+    <div class="search-box">
+      <input id="site-search" type="search" placeholder="Search games, platforms…" aria-label="Search deals" />
+    </div>
     <nav>
       <a href="/">Deals</a>
       <a href="/new-releases/">New Releases</a>
@@ -26,14 +29,38 @@
   .header-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
     height: 60px;
+    flex-wrap: wrap;
   }
   .logo {
     font-weight: 700;
     font-size: 1.15rem;
     color: var(--text);
     text-decoration: none;
+    white-space: nowrap;
+  }
+  .search-box {
+    flex: 1 1 200px;
+    max-width: 360px;
+  }
+  #site-search {
+    width: 100%;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    background: #f7f9fb;
+    outline: none;
+    color: var(--text);
+  }
+  #site-search:focus {
+    border-color: var(--accent);
+    background: #ffffff;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
   }
   nav a {
     margin-left: 1.25rem;
@@ -45,3 +72,33 @@
     color: var(--text);
   }
 </style>
+
+<script>
+  const input = document.getElementById("site-search");
+  if (input) {
+    input.addEventListener("input", () => {
+      const q = (input as HTMLInputElement).value.trim().toLowerCase();
+      const grid = document.querySelector(".deals-grid");
+      let visible = 0;
+      document.querySelectorAll(".deals-grid .deal-card").forEach((el) => {
+        const card = el as HTMLElement;
+        const hay = (
+          (card.dataset.title || "") + " " +
+          (card.dataset.platform || "") + " " +
+          (card.dataset.tags || "")
+        ).toLowerCase();
+        const match = !q || hay.includes(q);
+        card.style.display = match ? "" : "none";
+        if (match) visible++;
+      });
+      let msg = document.getElementById("no-results");
+      if (!msg && grid) {
+        msg = document.createElement("p");
+        msg.id = "no-results";
+        msg.textContent = "No games match your search.";
+        grid.after(msg);
+      }
+      if (msg) (msg as HTMLElement).style.display = visible === 0 ? "block" : "none";
+    });
+  }
+</script>
