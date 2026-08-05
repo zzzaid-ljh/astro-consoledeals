@@ -1,0 +1,99 @@
+---
+/**
+ * DealCard —— 首页 / 列表页用的「优惠卡片」。
+ * 数据来自 src/data/deals.json，渲染时统一走 AffiliateLink 拼接追踪链接。
+ */
+import AffiliateLink from "./AffiliateLink.astro";
+import type { Network } from "../config";
+
+interface Deal {
+  id: string;
+  title: string;
+  platform: string;
+  network: Network;
+  storeUrl: string;
+  note: string;
+  lastChecked: string;
+}
+
+const { deal } = Astro.props as { deal: Deal };
+const storeName =
+  deal.network === "amazon"
+    ? "Amazon"
+    : deal.network === "gmg"
+      ? "Green Man Gaming"
+      : deal.network === "humble"
+        ? "Humble Bundle"
+        : "Fanatical";
+---
+
+<article class="deal-card">
+  <div class="deal-head">
+    <h3>{deal.title}</h3>
+    <span class="platform">{deal.platform}</span>
+  </div>
+  <p class="note">{deal.note}</p>
+  <AffiliateLink network={deal.network} href={deal.storeUrl} cta={`View on ${storeName}`} />
+  <p class="checked">Last checked: {deal.lastChecked} — verify price on store.</p>
+</article>
+
+<style>
+  .deal-card {
+    background: var(--card);
+    border: 1px solid #232a36;
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .deal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+  .deal-head h3 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+  .platform {
+    font-size: 0.75rem;
+    color: var(--muted);
+    background: #232a36;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin: 0.4rem 0;
+  }
+  .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .regular {
+    color: var(--muted);
+    text-decoration: line-through;
+    font-size: 0.95rem;
+  }
+  .savings {
+    color: #ffb454;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .note {
+    color: var(--muted);
+    font-size: 0.88rem;
+    margin: 0.25rem 0 0.9rem;
+  }
+  .checked {
+    color: #6b7484;
+    font-size: 0.72rem;
+    margin: 0.6rem 0 0;
+  }
+</style>

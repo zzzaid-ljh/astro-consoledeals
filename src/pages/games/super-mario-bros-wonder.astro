@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AffiliateLink from "../../components/AffiliateLink.astro";
+---
+
+<BaseLayout
+  title="Super Mario Bros. Wonder — Buying Guide"
+  description="A buying guide for Super Mario Bros. Wonder on Switch: what's new, co-op support, and where to find the best price in 2026."
+>
+  <article class="post">
+    <h1>Super Mario Bros. Wonder — Buying Guide</h1>
+    <p class="meta">Nintendo Switch · Updated 2026-08-05</p>
+
+    <p>
+      <strong>Super Mario Bros. Wonder</strong> is the first new 2D Mario in over a
+      decade, and it's a return to form. The "Wonder Flowers" warp each level into
+      surreal new layouts, and the art style is the most expressive the series has
+      seen.
+    </p>
+
+    <h2>What makes it special</h2>
+    <ul>
+      <li>Up to 4-player local co-op, including the new Elephant Mario form</li>
+      <li>Standout soundtrack and hand-animated set-pieces</li>
+      <li>Tight, modern platforming with forgiving checkpoints</li>
+      <li>A great "first Nintendo game" for kids and newcomers</li>
+    </ul>
+
+    <h2>Is it worth full price?</h2>
+    <p>
+      As a recent first-party release, it holds MSRP most of the year. It's worth
+      full price if you want it now; if you can wait, Nintendo's holiday eShop sales
+      and Black Friday retailer discounts are where the first real dips appear.
+    </p>
+
+    <h2>Digital vs physical</h2>
+    <p>
+      Same trade-off as other Switch exclusives: digital for convenience, physical
+      for resale. The file is modest, so storage isn't a concern either way.
+    </p>
+
+    <h2>Where to buy cheapest</h2>
+    <ul class="buy-list">
+      <li>
+        <AffiliateLink
+          network="amazon"
+          href="https://www.amazon.com/s?k=Super+Mario+Bros+Wonder+Switch"
+          cta="Check on Amazon"
+        />
+      </li>
+    </ul>
+
+    <p class="note">
+      Prices change frequently — always verify on the store before purchasing.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .post { padding: 1.5rem 0; max-width: 720px; }
+  .post h1 { font-size: 1.8rem; }
+  .meta { color: var(--muted); font-size: 0.85rem; }
+  .buy-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .note { color: var(--muted); font-size: 0.85rem; margin-top: 1.5rem; }
+</style>

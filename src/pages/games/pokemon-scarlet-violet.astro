@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AffiliateLink from "../../components/AffiliateLink.astro";
+---
+
+<BaseLayout
+  title="Pokémon Scarlet & Violet — Which Version to Buy"
+  description="A buying guide for Pokémon Scarlet & Violet on Switch: version differences, DLC, performance notes, and where to buy cheapest."
+>
+  <article class="post">
+    <h1>Pokémon Scarlet & Violet — Which Version to Buy</h1>
+    <p class="meta">Nintendo Switch · Updated 2026-08-05</p>
+
+    <p>
+      <strong>Pokémon Scarlet & Violet</strong> brought the series fully open-world.
+      The two versions are mirror-image: the same game with different version-exclusive
+      Pokémon and a few flavor differences.
+    </p>
+
+    <h2>Scarlet vs Violet: the only real difference</h2>
+    <ul>
+      <li><strong>Scarlet</strong> — past-themed creatures (e.g., Koraidon, a bike-like mount)</li>
+      <li><strong>Violet</strong> — future-themed creatures (e.g., Miraidon, a bike-like mount)</li>
+      <li>Everything else — story, region, and core loop — is identical</li>
+    </ul>
+    <p>Pick based on which exclusives you like. Most players go by which legendary looks cooler.</p>
+
+    <h2>The DLC question</h2>
+    <p>
+      The <em>Hidden Treasure of Area Zero</em> expansion adds two story arcs and is
+      sold as a paid add-on. If you plan to play long-term, the bundle with the DLC
+      is usually better value than buying base + DLC separately later.
+    </p>
+
+    <h2>Performance note</h2>
+    <p>
+      The base game had a rough launch technically; later patches improved it. On
+      Switch 2 (if you have one) it runs markedly better. Worth knowing before you
+      buy pre-owned at a discount.
+    </p>
+
+    <h2>Where to buy cheapest</h2>
+    <ul class="buy-list">
+      <li>
+        <AffiliateLink
+          network="amazon"
+          href="https://www.amazon.com/s?k=Pokemon+Scarlet+Violet+Switch"
+          cta="Check on Amazon"
+        />
+      </li>
+    </ul>
+
+    <p class="note">
+      Prices change frequently — always verify on the store before purchasing.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .post { padding: 1.5rem 0; max-width: 720px; }
+  .post h1 { font-size: 1.8rem; }
+  .meta { color: var(--muted); font-size: 0.85rem; }
+  .buy-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .note { color: var(--muted); font-size: 0.85rem; margin-top: 1.5rem; }
+</style>

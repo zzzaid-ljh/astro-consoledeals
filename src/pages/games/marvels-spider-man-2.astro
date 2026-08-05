@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AffiliateLink from "../../components/AffiliateLink.astro";
+---
+
+<BaseLayout
+  title="Marvel's Spider-Man 2 — PS5 Buying Guide"
+  description="A buying guide for Marvel's Spider-Man 2 on PS5: what's new, edition differences, and where to buy the digital version cheapest."
+>
+  <article class="post">
+    <h1>Marvel's Spider-Man 2 — PS5 Buying Guide</h1>
+    <p class="meta">PlayStation 5 · Updated 2026-08-05</p>
+
+    <p>
+      <strong>Marvel's Spider-Man 2</strong> is the PS5 exclusive that puts you in
+      control of both Peter Parker and Miles Morales, swinging through a bigger,
+      faster New York with the new Web Wings glide.
+    </p>
+
+    <h2>What's new</h2>
+    <ul>
+      <li>Two playable Spider-Men with distinct power sets</li>
+      <li>The Symbiote suit story arc and a larger open world</li>
+      <li>Dual protagonists and faster traversal (Web Wings)</li>
+    </ul>
+
+    <h2>Standard vs Digital Deluxe</h2>
+    <ul>
+      <li><strong>Standard</strong> — the full game</li>
+      <li><strong>Digital Deluxe</strong> — early unlock of 10 suits + a few points; cosmetic only</li>
+    </ul>
+    <p>Unless you want those suits on day one, Standard is the better value.</p>
+
+    <h2>Where to buy cheapest (PS5)</h2>
+    <p>
+      As a PlayStation console exclusive, your options are the PlayStation Store and
+      key resellers. A GMG PSN wallet-code or key can sometimes beat direct Store
+      pricing, especially during site sales. Always compare the total against
+      PlayStation Store wallet-credit promos before buying.
+    </p>
+
+    <h2>Where to buy</h2>
+    <ul class="buy-list">
+      <li>
+        <AffiliateLink
+          network="gmg"
+          href="https://www.greenmangaming.com/search/?q=marvel+spiderman+2+ps5"
+          cta="Check Green Man Gaming"
+        />
+      </li>
+      <li>
+        <AffiliateLink
+          network="amazon"
+          href="https://www.amazon.com/s?k=Marvels+Spider-Man+2+PS5"
+          cta="Check on Amazon"
+        />
+      </li>
+    </ul>
+
+    <p class="note">
+      Prices change frequently — always verify on the store before purchasing.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .post { padding: 1.5rem 0; max-width: 720px; }
+  .post h1 { font-size: 1.8rem; }
+  .meta { color: var(--muted); font-size: 0.85rem; }
+  .buy-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .note { color: var(--muted); font-size: 0.85rem; margin-top: 1.5rem; }
+</style>

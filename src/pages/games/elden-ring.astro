@@ -1,0 +1,75 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AffiliateLink from "../../components/AffiliateLink.astro";
+---
+
+<BaseLayout
+  title="Elden Ring — Base Game vs GOTY vs DLC"
+  description="A buying guide for Elden Ring: edition differences, the Shadow of the Erdtree DLC, platform choices, and where to buy cheapest."
+>
+  <article class="post">
+    <h1>Elden Ring — Base Game vs GOTY vs DLC</h1>
+    <p class="meta">Cross-platform · Updated 2026-08-05</p>
+
+    <p>
+      <strong>Elden Ring</strong> is FromSoftware's open-world action-RPG co-directed
+      with George R. R. Martin. It blends punishing combat with total freedom to
+      explore the Lands Between at your own pace.
+    </p>
+
+    <h2>Editions explained</h2>
+    <ul>
+      <li><strong>Base game</strong> — the full open-world experience</li>
+      <li><strong>Shadow of the Erdtree Edition</strong> — base game + the major DLC expansion</li>
+      <li><strong>DLC sold separately</strong> — only buy if you already own the base game</li>
+    </ul>
+    <p>
+      If you're starting fresh, the edition that bundles the DLC is the cleanest
+      purchase — Shadow of the Erdtree is widely regarded as a full second game's
+      worth of content.
+    </p>
+
+    <h2>Platform choice</h2>
+    <p>
+      Elden Ring plays on every modern platform. Performance is smoothest on PS5 /
+      Xbox Series and PC; last-gen consoles are playable but choppier.
+    </p>
+
+    <h2>Where to buy cheapest</h2>
+    <p>
+      Key stores consistently undercut the physical disc and sometimes the console
+      stores, especially for the base game now that it's mature. Compare a GMG key
+      against Steam / console-store sales before you buy.
+    </p>
+
+    <h2>Where to buy</h2>
+    <ul class="buy-list">
+      <li>
+        <AffiliateLink
+          network="gmg"
+          href="https://www.greenmangaming.com/search/?q=elden+ring"
+          cta="Check Green Man Gaming"
+        />
+      </li>
+      <li>
+        <AffiliateLink
+          network="amazon"
+          href="https://www.amazon.com/s?k=Elden+Ring"
+          cta="Check on Amazon"
+        />
+      </li>
+    </ul>
+
+    <p class="note">
+      Prices change frequently — always verify on the store before purchasing.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .post { padding: 1.5rem 0; max-width: 720px; }
+  .post h1 { font-size: 1.8rem; }
+  .meta { color: var(--muted); font-size: 0.85rem; }
+  .buy-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .note { color: var(--muted); font-size: 0.85rem; margin-top: 1.5rem; }
+</style>

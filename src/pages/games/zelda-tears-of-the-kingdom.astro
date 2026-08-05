@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AffiliateLink from "../../components/AffiliateLink.astro";
+---
+
+<BaseLayout
+  title="Zelda: Tears of the Kingdom — Digital or Physical?"
+  description="A buying guide for The Legend of Zelda: Tears of the Kingdom on Switch: edition differences, download size, and where to buy cheapest."
+>
+  <article class="post">
+    <h1>Zelda: Tears of the Kingdom — Digital or Physical?</h1>
+    <p class="meta">Nintendo Switch · Updated 2026-08-05</p>
+
+    <p>
+      <strong>The Legend of Zelda: Tears of the Kingdom</strong> is the 2023
+      sequel to Breath of the Wild and one of the most ambitious open-world games
+      on Switch. Its headline mechanic — building vehicles and contraptions with
+      Zonai devices — gives it hundreds of hours of emergent play.
+    </p>
+
+    <h2>Editions available</h2>
+    <ul>
+      <li><strong>Standard physical cartridge</strong> — resellable, no install space needed</li>
+      <li><strong>Digital download</strong> — instant, always installed, but a large file (~16 GB + expansion)</li>
+      <li><strong>Collector's / Amiibo bundles</strong> — only worth it for collectors</li>
+    </ul>
+
+    <h2>Digital vs physical: the real trade-off</h2>
+    <p>
+      There is no "definitive edition" with extra story content, so the choice is
+      purely convenience vs resale value. Digital is best if your Switch storage is
+      fine and you hate swapping cartridges. Physical wins if you plan to trade it
+      in later — Nintendo games hold value unusually well.
+    </p>
+
+    <h2>Is the download worth the storage?</h2>
+    <p>
+      TOTK is a big install. If you're on a 64 GB base Switch, you'll want a microSD
+      card regardless. Factor that into the "cheapest" math if you must buy storage
+      to fit it.
+    </p>
+
+    <h2>Where to buy cheapest</h2>
+    <ul class="buy-list">
+      <li>
+        <AffiliateLink
+          network="amazon"
+          href="https://www.amazon.com/s?k=Zelda+Tears+of+the+Kingdom+Switch"
+          cta="Check on Amazon"
+        />
+      </li>
+    </ul>
+
+    <p class="note">
+      Prices change frequently — always verify on the store before purchasing.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .post { padding: 1.5rem 0; max-width: 720px; }
+  .post h1 { font-size: 1.8rem; }
+  .meta { color: var(--muted); font-size: 0.85rem; }
+  .buy-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .note { color: var(--muted); font-size: 0.85rem; margin-top: 1.5rem; }
+</style>

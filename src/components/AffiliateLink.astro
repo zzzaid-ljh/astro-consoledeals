@@ -1,0 +1,65 @@
+---
+/**
+ * AffiliateLink —— 全站统一的联盟链接组件。
+ * 所有带追踪参数的链接都从这里出，避免散落各处难维护。
+ *
+ * 用法：
+ *   <AffiliateLink network="gmg" href="https://...商品URL" cta="View Deal" />
+ *   <AffiliateLink network="amazon" href="https://...dp/XXX" text="在 Amazon 查看" />
+ */
+import { affiliates, type Network } from "../config";
+
+interface Props {
+  /** 联盟网络，必须是 config.ts 里定义的 Network */
+  network: Network;
+  /** 真实商品 / 落地页 URL（不含追踪参数，由本组件统一拼接） */
+  href: string;
+  /** 自定义链接文字；不填则用 cta 或默认文案 */
+  text?: string;
+  /** 按钮文案，如 "View Deal" / "Check price" */
+  cta?: string;
+  /** 额外 class */
+  class?: string;
+}
+
+const { network, href, text, cta, class: className } = Astro.props;
+
+const cfg = affiliates[network];
+if (!cfg) {
+  throw new Error(`AffiliateLink: 未知联盟网络 "${network}"，请在 src/config.ts 中定义。`);
+}
+
+if (!cfg.enabled) {
+  // 未开通时仍渲染，但给开发者一个明确提醒（不会显示给访客）。
+  console.warn(
+    `[AffiliateLink] 网络 "${network}" 尚未开通 (enabled=false)。链接照常输出，但请尽快替换为你自己的联盟 ID。`
+  );
+}
+
+const finalUrl = cfg.build(href);
+const linkText = text ?? cta ?? `在 ${cfg.label} 查看`;
+---
+
+<a
+  href={finalUrl}
+  target="_blank"
+  rel="nofollow noopener sponsored"
+  class:list={["aff-link", className]}
+>{linkText}</a>
+
+<style>
+  .aff-link {
+    display: inline-block;
+    padding: 0.55rem 1.1rem;
+    background: #1a7f5a;
+    color: #fff !important;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.15s ease;
+  }
+  .aff-link:hover {
+    background: #146043;
+  }
+</style>

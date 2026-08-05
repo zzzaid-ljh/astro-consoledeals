@@ -1,0 +1,114 @@
+{
+  "lastUpdated": "2026-08-05",
+  "notes": "每周手动策展。价格会变动，卡片不再手标死价格（Amazon 政策禁止手标价格），只给 'View Deal' 按钮 + 'verify on store' 提示。storeUrl 用各平台搜索链接，避免猜错 ASIN/商品 slug。network 取值：amazon / gmg / humble / fanatical。",
+  "deals": [
+    {
+      "id": "mario-kart-8-deluxe",
+      "title": "Mario Kart 8 Deluxe",
+      "platform": "Nintendo Switch",
+      "network": "amazon",
+      "storeUrl": "https://www.amazon.com/s?k=Mario+Kart+8+Deluxe+Switch",
+      "note": "Nintendo first-party rarely dips below MSRP. Best discounts show up in eShop seasonal sales and bundle offers.",
+      "lastChecked": "2026-08-05"
+    },
+    {
+      "id": "zelda-tears-of-the-kingdom",
+      "title": "The Legend of Zelda: Tears of the Kingdom",
+      "platform": "Nintendo Switch",
+      "network": "amazon",
+      "storeUrl": "https://www.amazon.com/s?k=Zelda+Tears+of+the+Kingdom+Switch",
+      "note": "A 2023 GOTY contender. Digital editions occasionally drop during Nintendo eShop holiday sales.",
+      "lastChecked": "2026-08-05"
+    },
+    {
+      "id": "super-mario-bros-wonder",
+      "title": "Super Mario Bros. Wonder",
+      "platform": "Nintendo Switch",
+      "network": "amazon",
+      "storeUrl": "https://www.amazon.com/s?k=Super+Mario+Bros+Wonder+Switch",
+      "note": "The definitive 2D Mario. Full price most of the year; watch for holiday and Black Friday dips.",
+      "lastChecked": "2026-08-05"
+    },
+    {
+      "id": "animal-crossing-new-horizons",
+      "title": "Animal Crossing: New Horizons",
+      "platform": "Nintendo Switch",
+      "network": "amazon",
+      "storeUrl": "https://www.amazon.com/s?k=Animal+Crossing+New+Horizons+Switch",
+      "note": "The cozy-life sim evergreen. Often bundled with consoles; standalone dips appear in big seasonal sales.",
+      "lastChecked": "2026-08-05"
+    },
+    {
+      "id": "super-mario-odyssey",
+      "title": "Super Mario Odyssey",
+      "platform": "Nintendo Switch",
+      "network": "amazon",
+      "storeUrl": "https://www.amazon.com/s?k=Super+Mario+Odyssey+Switch",
+      "note": "Still the best 3D Mario. Frequently discounted in Nintendo's budget 'Selects' range.",
+      "lastChecked": "2026-08-05"
+    },
+    {
+      "id": "pokemon-scarlet-violet",
+      "title": "Pokémon Scarlet & Violet",
+      "platform": "Nintendo Switch",
+      "network": "amazon",
+      "storeUrl": "https://www.amazon.com/s?k=Pokemon+Scarlet+Violet+Switch",
+      "note": "The open-world Pokémon duo. Dual-pack and eShop sales appear a few times a year.",
+      "lastChecked": "2026-08-05"
+    },
+    {
+      "id": "call-of-duty-black-ops-6",
+      "title": "Call of Duty: Black Ops 6",
+      "platform": "Xbox / PS5 / PC",
+      "network": "gmg",
+      "storeUrl": "https://www.greenmangaming.com/search/?q=call+of+duty+black+ops+6",
+      "note": "GMG digital keys usually undercut console disc prices and work across Xbox, PS, and PC.",
+      "lastChecked": "2026-08-05"
+    },
+    {
+      "id": "ea-sports-fc-25",
+      "title": "EA Sports FC 25",
+      "platform": "PlayStation / Xbox",
+      "network": "humble",
+      "storeUrl": "https://www.humblebundle.com/store?search=ea+sports+fc+25",
+      "note": "Humble's digital store runs frequent promos; previous FC entries hit half-price within months.",
+      "lastChecked": "2026-08-05"
+    },
+    {
+      "id": "hogwarts-legacy",
+      "title": "Hogwarts Legacy",
+      "platform": "PS5 / Xbox / Switch",
+      "network": "fanatical",
+      "storeUrl": "https://www.fanatical.com/en/search?search=hogwarts+legacy",
+      "note": "Fanatical clears older hits hard — often 50%+ off during site-wide events.",
+      "lastChecked": "2026-08-05"
+    },
+    {
+      "id": "marvels-spider-man-2",
+      "title": "Marvel's Spider-Man 2",
+      "platform": "PlayStation 5",
+      "network": "gmg",
+      "storeUrl": "https://www.greenmangaming.com/search/?q=marvel+spiderman+2+ps5",
+      "note": "PS5 console exclusive. GMG key sometimes beats PS Store credit pricing.",
+      "lastChecked": "2026-08-05"
+    },
+    {
+      "id": "elden-ring",
+      "title": "Elden Ring",
+      "platform": "Cross-platform",
+      "network": "gmg",
+      "storeUrl": "https://www.greenmangaming.com/search/?q=elden+ring",
+      "note": "FromSoftware's open-world epic. Key stores undercut physical; DLC 'Shadow of the Erdtree' sold separately.",
+      "lastChecked": "2026-08-05"
+    },
+    {
+      "id": "baldurs-gate-3",
+      "title": "Baldur's Gate 3",
+      "platform": "Cross-platform",
+      "network": "humble",
+      "storeUrl": "https://www.humblebundle.com/store?search=baldurs+gate+3",
+      "note": "GOTY 2023 RPG. Humble frequently bundles the DLC or discounts the base game.",
+      "lastChecked": "2026-08-05"
+    }
+  ]
+}

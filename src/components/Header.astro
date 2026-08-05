@@ -1,0 +1,45 @@
+---
+// 顶部导航。改站名 / 加栏目在这里。
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo">🎮 ConsoleDeals</a>
+    <nav>
+      <a href="/">Deals</a>
+      <a href="/games/">Guides</a>
+      <a href="/about/">About</a>
+      <a href="/privacy/">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid #232a36;
+    background: #141922;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--text);
+    text-decoration: none;
+  }
+  nav a {
+    margin-left: 1.25rem;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  nav a:hover {
+    color: var(--text);
+  }
+</style>

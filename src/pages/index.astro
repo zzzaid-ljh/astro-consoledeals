@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import DealCard from "../components/DealCard.astro";
+import dealsData from "../data/deals.json";
+
+const deals = dealsData.deals as any[];
+const lastUpdated = dealsData.lastUpdated;
+---
+
+<BaseLayout>
+  <section class="hero">
+    <h1>Console &amp; Game Deals, Curated Weekly</h1>
+    <p>
+      Hand-picked deals on Switch, PlayStation, and Xbox games — pulled from
+      Amazon, Green Man Gaming, Humble Bundle, and Fanatical. Updated {lastUpdated}.
+    </p>
+  </section>
+
+  <section class="deals-grid" aria-label="Weekly deals">
+    {deals.map((d) => <DealCard deal={d} />)}
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 1.5rem 0 1rem;
+  }
+  .hero h1 {
+    margin: 0 0 0.5rem;
+  }
+  .hero p {
+    color: var(--muted);
+    max-width: 640px;
+  }
+  .deals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+</style>

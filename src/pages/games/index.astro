@@ -1,0 +1,67 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+// 第一篇批量攻略清单（12 单游戏 + 3 合集长尾文）。
+const guides = [
+  // ── 单游戏攻略 ──
+  { slug: "mario-kart-8-deluxe", title: "Mario Kart 8 Deluxe — Is It Worth It in 2026?", platform: "Nintendo Switch" },
+  { slug: "zelda-tears-of-the-kingdom", title: "Zelda: Tears of the Kingdom — Digital or Physical?", platform: "Nintendo Switch" },
+  { slug: "super-mario-bros-wonder", title: "Super Mario Bros. Wonder — Buying Guide", platform: "Nintendo Switch" },
+  { slug: "animal-crossing-new-horizons", title: "Animal Crossing: New Horizons — Still Worth Buying?", platform: "Nintendo Switch" },
+  { slug: "super-mario-odyssey", title: "Super Mario Odyssey — Is It Still the Best 3D Mario?", platform: "Nintendo Switch" },
+  { slug: "pokemon-scarlet-violet", title: "Pokémon Scarlet & Violet — Which Version to Buy", platform: "Nintendo Switch" },
+  { slug: "call-of-duty-black-ops-6", title: "Call of Duty: Black Ops 6 — Cross-Platform Buying Guide", platform: "Xbox / PS5 / PC" },
+  { slug: "ea-sports-fc-25", title: "EA Sports FC 25 — Where to Buy Digital Cheapest", platform: "PlayStation / Xbox" },
+  { slug: "hogwarts-legacy", title: "Hogwarts Legacy — Edition & Platform Guide", platform: "PS5 / Xbox / Switch" },
+  { slug: "marvels-spider-man-2", title: "Marvel's Spider-Man 2 — PS5 Buying Guide", platform: "PlayStation 5" },
+  { slug: "elden-ring", title: "Elden Ring — Base Game vs GOTY vs DLC", platform: "Cross-platform" },
+  { slug: "baldurs-gate-3", title: "Baldur's Gate 3 — Which Edition Should You Buy?", platform: "Cross-platform" },
+  // ── 合集 / 长尾文 ──
+  { slug: "best-coop-switch-games-2026", title: "Best Co-Op Games on Switch (2026)", platform: "Roundup" },
+  { slug: "best-cheap-console-games-under-30", title: "Best Cheap Console Games Under $30", platform: "Roundup" },
+  { slug: "ps5-vs-xbox-where-to-buy-digital", title: "PS5 vs Xbox: Where to Buy Digital Games Cheaper", platform: "Roundup" },
+];
+---
+
+<BaseLayout
+  title="Game Guides — ConsoleDeals"
+  description="Buying guides and deal analysis for popular console games across Switch, PlayStation, and Xbox."
+>
+  <h1>Game Guides</h1>
+  <p class="sub">
+    Long-tail buying guides. Each one ends with the cheapest verified place to
+    buy right now.
+  </p>
+  <ul class="guide-list">
+    {
+      guides.map((g) => (
+        <li>
+          <a href={`/games/${g.slug}/`}>{g.title}</a>
+          <span class="tag">{g.platform}</span>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
+
+<style>
+  .sub {
+    color: var(--muted);
+  }
+  .guide-list {
+    list-style: none;
+    padding: 0;
+  }
+  .guide-list li {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid #232a36;
+  }
+  .tag {
+    font-size: 0.75rem;
+    color: var(--muted);
+    background: #232a36;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    margin-left: 0.5rem;
+  }
+</style>
