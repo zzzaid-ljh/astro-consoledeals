@@ -1,21 +1,52 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
-// 第一篇批量攻略清单（12 单游戏 + 3 合集长尾文）。
+// 全部攻略清单（单游戏 40 篇 + 合集长尾 3 篇 = 43 篇）。
 const guides = [
-  // ── 单游戏攻略 ──
+  // ── Nintendo Switch / Switch 2 ──
   { slug: "mario-kart-8-deluxe", title: "Mario Kart 8 Deluxe — Is It Worth It in 2026?", platform: "Nintendo Switch" },
+  { slug: "mario-kart-world", title: "Mario Kart World — Switch 2 Buying Guide", platform: "Nintendo Switch 2" },
   { slug: "zelda-tears-of-the-kingdom", title: "Zelda: Tears of the Kingdom — Digital or Physical?", platform: "Nintendo Switch" },
+  { slug: "zelda-breath-of-the-wild", title: "Zelda: Breath of the Wild — Still Worth Buying in 2026?", platform: "Nintendo Switch" },
   { slug: "super-mario-bros-wonder", title: "Super Mario Bros. Wonder — Buying Guide", platform: "Nintendo Switch" },
-  { slug: "animal-crossing-new-horizons", title: "Animal Crossing: New Horizons — Still Worth Buying?", platform: "Nintendo Switch" },
   { slug: "super-mario-odyssey", title: "Super Mario Odyssey — Is It Still the Best 3D Mario?", platform: "Nintendo Switch" },
+  { slug: "animal-crossing-new-horizons", title: "Animal Crossing: New Horizons — Still Worth Buying?", platform: "Nintendo Switch" },
   { slug: "pokemon-scarlet-violet", title: "Pokémon Scarlet & Violet — Which Version to Buy", platform: "Nintendo Switch" },
+  { slug: "metroid-prime-4-beyond", title: "Metroid Prime 4: Beyond — Should You Pre-order?", platform: "Nintendo Switch" },
+  { slug: "super-smash-bros-ultimate", title: "Super Smash Bros. Ultimate — The Party Game That Never Leaves the Shelf", platform: "Nintendo Switch" },
+  { slug: "splatoon-3", title: "Splatoon 3 — Is the Digital Version Worth It?", platform: "Nintendo Switch" },
+  { slug: "donkey-kong-bananza", title: "Donkey Kong Bananza — Switch 2 Exclusive Buying Guide", platform: "Nintendo Switch 2" },
+  // ── PlayStation 5 ──
+  { slug: "marvels-spider-man-2", title: "Marvel's Spider-Man 2 — PS5 Buying Guide", platform: "PlayStation 5" },
+  { slug: "god-of-war-ragnarok", title: "God of War Ragnarök — PS5 Buying Guide", platform: "PlayStation 5" },
+  { slug: "horizon-forbidden-west", title: "Horizon Forbidden West — PS5 Buying Guide", platform: "PlayStation 5" },
+  { slug: "the-last-of-us-part-ii-remastered", title: "The Last of Us Part II Remastered — PS5 Buying Guide", platform: "PlayStation 5" },
+  { slug: "ghost-of-tsushima", title: "Ghost of Tsushima — PS5 Director's Cut Buying Guide", platform: "PlayStation 5" },
+  { slug: "ratchet-and-clank-rift-apart", title: "Ratchet & Clank: Rift Apart — PS5 Buying Guide", platform: "PlayStation 5" },
+  { slug: "final-fantasy-vii-rebirth", title: "Final Fantasy VII Rebirth — PS5 Buying Guide", platform: "PlayStation 5" },
+  { slug: "final-fantasy-xvi", title: "Final Fantasy XVI — PS5 Buying Guide", platform: "PlayStation 5" },
+  { slug: "astro-bot", title: "Astro Bot — PS5 Buying Guide", platform: "PlayStation 5" },
+  { slug: "helldivers-2", title: "Helldivers 2 — Cross-Platform Buying Guide", platform: "PlayStation 5 / PC" },
+  { slug: "stellar-blade", title: "Stellar Blade — PS5 Buying Guide", platform: "PlayStation 5" },
+  { slug: "black-myth-wukong", title: "Black Myth: Wukong — PS5 Buying Guide", platform: "PlayStation 5" },
+  { slug: "silent-hill-2-remake", title: "Silent Hill 2 Remake — PS5 Buying Guide", platform: "PlayStation 5" },
+  // ── Xbox ──
+  { slug: "forza-horizon-5", title: "Forza Horizon 5 — Xbox Buying Guide", platform: "Xbox" },
+  { slug: "halo-infinite", title: "Halo Infinite — Xbox Buying Guide", platform: "Xbox" },
+  { slug: "starfield", title: "Starfield — Xbox Buying Guide", platform: "Xbox" },
+  // ── Cross-platform ──
   { slug: "call-of-duty-black-ops-6", title: "Call of Duty: Black Ops 6 — Cross-Platform Buying Guide", platform: "Xbox / PS5 / PC" },
   { slug: "ea-sports-fc-25", title: "EA Sports FC 25 — Where to Buy Digital Cheapest", platform: "PlayStation / Xbox" },
   { slug: "hogwarts-legacy", title: "Hogwarts Legacy — Edition & Platform Guide", platform: "PS5 / Xbox / Switch" },
-  { slug: "marvels-spider-man-2", title: "Marvel's Spider-Man 2 — PS5 Buying Guide", platform: "PlayStation 5" },
   { slug: "elden-ring", title: "Elden Ring — Base Game vs GOTY vs DLC", platform: "Cross-platform" },
   { slug: "baldurs-gate-3", title: "Baldur's Gate 3 — Which Edition Should You Buy?", platform: "Cross-platform" },
+  { slug: "red-dead-redemption-2", title: "Red Dead Redemption 2 — Cross-Platform Buying Guide", platform: "Xbox / PS5 / PC" },
+  { slug: "cyberpunk-2077", title: "Cyberpunk 2077 — Cross-Platform Buying Guide", platform: "Xbox / PS5 / PC" },
+  { slug: "monster-hunter-wilds", title: "Monster Hunter Wilds — Cross-Platform Buying Guide", platform: "Xbox / PS5 / PC" },
+  { slug: "assassins-creed-shadows", title: "Assassin's Creed Shadows — Cross-Platform Buying Guide", platform: "Xbox / PS5 / PC" },
+  { slug: "kingdom-come-deliverance-2", title: "Kingdom Come: Deliverance II — Cross-Platform Buying Guide", platform: "Xbox / PS5 / PC" },
+  { slug: "gta-vi", title: "Grand Theft Auto VI — Pre-order & Buying Guide", platform: "Xbox / PS5 / PC" },
+  { slug: "star-wars-outlaws", title: "Star Wars Outlaws — Cross-Platform Buying Guide", platform: "Xbox / PS5 / PC" },
   // ── 合集 / 长尾文 ──
   { slug: "best-coop-switch-games-2026", title: "Best Co-Op Games on Switch (2026)", platform: "Roundup" },
   { slug: "best-cheap-console-games-under-30", title: "Best Cheap Console Games Under $30", platform: "Roundup" },

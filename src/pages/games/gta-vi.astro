@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AffiliateLink from "../../components/AffiliateLink.astro";
+---
+
+<BaseLayout
+  title="Grand Theft Auto VI — Pre-order & Buying Guide"
+  description="Grand Theft Auto VI buying guide: the most-anticipated release, pre-order vs wait, and where to buy the digital version cheapest."
+>
+  <article class="post">
+    <h1>Grand Theft Auto VI — Pre-order &amp; Buying Guide</h1>
+    <p class="meta">Xbox / PS5 / PC · Updated 2026-08-05</p>
+
+    <p>
+      <strong>Grand Theft Auto VI</strong> is the most-anticipated game of the cycle,
+      returning to the vice-city-inspired state of Leonida with a new dual-protagonist
+      story. Demand will be enormous at launch.
+    </p>
+
+    <h2>What we know</h2>
+    <ul>
+      <li><strong>Day-one platforms</strong> — confirmed for current-gen consoles at launch; PC follows later</li>
+      <li><strong>Editions</strong> — expect Standard and a premium edition with in-game cash and cosmetic bonuses; no story locks</li>
+      <li><strong>Pre-order</strong> — the first reliable way to guarantee a copy at launch</li>
+    </ul>
+
+    <h2>Pre-order or wait?</h2>
+    <p>
+      GTA VI will launch at list price with no early discounts — Rockstar games rarely
+      drop for years. Pre-order only if you want to play on day one. If you can wait, the
+      first real deals follow well after launch. Key stores like Green Man Gaming will
+      carry it once available.
+    </p>
+
+    <ul class="buy-list">
+      <li>
+        <AffiliateLink
+          network="gmg"
+          href="https://www.greenmangaming.com/search/?q=grand+theft+auto+6"
+          cta="Check Green Man Gaming"
+        />
+      </li>
+      <li>
+        <AffiliateLink
+          network="amazon"
+          href="https://www.amazon.com/s?k=Grand+Theft+Auto+VI"
+          cta="Check on Amazon"
+        />
+      </li>
+    </ul>
+
+    <p class="note">
+      Prices change frequently — always verify on the store before purchasing. Pre-orders
+      may not be live yet; check the store for availability.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .post { padding: 1.5rem 0; max-width: 720px; }
+  .post h1 { font-size: 1.8rem; }
+  .meta { color: var(--muted); font-size: 0.85rem; }
+  .buy-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .note { color: var(--muted); font-size: 0.85rem; margin-top: 1.5rem; }
+</style>

@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AffiliateLink from "../../components/AffiliateLink.astro";
+---
+
+<BaseLayout
+  title="Starfield — Xbox Buying Guide"
+  description="Starfield buying guide: Bethesda's space RPG, editions, and where to buy the digital Xbox version cheapest."
+>
+  <article class="post">
+    <h1>Starfield — Xbox Buying Guide</h1>
+    <p class="meta">Xbox · Updated 2026-08-05</p>
+
+    <p>
+      <strong>Starfield</strong> is Bethesda's first new universe in 25 years — a
+      sprawling sci-fi RPG about exploration, faction politics, and shipbuilding across
+      a settled star system.
+    </p>
+
+    <h2>Standard vs Constellation Edition</h2>
+    <ul>
+      <li><strong>Standard</strong> — the full game</li>
+      <li><strong>Constellation / Premium</strong> — add a storybook, skin pack, and (for some) early access; cosmetic only</li>
+      <li><strong>Game Pass</strong> — was day-one on Game Pass, so subscribers may not need to buy</li>
+    </ul>
+
+    <h2>Where to buy cheapest</h2>
+    <p>
+      Well past its 2023 launch, Starfield's key-store price on Green Man Gaming now sits
+      well below launch MSRP and undercuts the Microsoft Store. A GMG code is the cheapest
+      permanent copy if you're not on Game Pass.
+    </p>
+
+    <ul class="buy-list">
+      <li>
+        <AffiliateLink
+          network="gmg"
+          href="https://www.greenmangaming.com/search/?q=starfield+xbox"
+          cta="Check Green Man Gaming"
+        />
+      </li>
+      <li>
+        <AffiliateLink
+          network="amazon"
+          href="https://www.amazon.com/s?k=Starfield+Xbox"
+          cta="Check on Amazon"
+        />
+      </li>
+    </ul>
+
+    <p class="note">
+      Prices change frequently — always verify on the store before purchasing.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .post { padding: 1.5rem 0; max-width: 720px; }
+  .post h1 { font-size: 1.8rem; }
+  .meta { color: var(--muted); font-size: 0.85rem; }
+  .buy-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .note { color: var(--muted); font-size: 0.85rem; margin-top: 1.5rem; }
+</style>

@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AffiliateLink from "../../components/AffiliateLink.astro";
+---
+
+<BaseLayout
+  title="Halo Infinite — Xbox Buying Guide"
+  description="Halo Infinite buying guide: campaign vs multiplayer, editions, and where to buy the digital Xbox version cheapest."
+>
+  <article class="post">
+    <h1>Halo Infinite — Xbox Buying Guide</h1>
+    <p class="meta">Xbox · Updated 2026-08-05</p>
+
+    <p>
+      <strong>Halo Infinite</strong> is 343 Industries' return to Master Chief, with a
+      open-zone campaign and a free-to-play multiplayer that remains the series'
+      competitive core.
+    </p>
+
+    <h2>What you're buying</h2>
+    <ul>
+      <li><strong>Campaign</strong> — a paid single-player story; this is what the digital purchase covers</li>
+      <li><strong>Multiplayer</strong> — free to play, no purchase needed</li>
+      <li><strong>Editions</strong> — most "editions" are cosmetic armor coatings; the campaign alone is enough</li>
+    </ul>
+
+    <h2>Where to buy cheapest</h2>
+    <p>
+      Halo Infinite has been on the market a while and sees deep key-store discounts on
+      Green Man Gaming versus the Microsoft Store. If you only want the campaign, a GMG
+      code is usually dramatically cheaper.
+    </p>
+
+    <ul class="buy-list">
+      <li>
+        <AffiliateLink
+          network="gmg"
+          href="https://www.greenmangaming.com/search/?q=halo+infinite+xbox"
+          cta="Check Green Man Gaming"
+        />
+      </li>
+      <li>
+        <AffiliateLink
+          network="amazon"
+          href="https://www.amazon.com/s?k=Halo+Infinite+Xbox"
+          cta="Check on Amazon"
+        />
+      </li>
+    </ul>
+
+    <p class="note">
+      Prices change frequently — always verify on the store before purchasing.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .post { padding: 1.5rem 0; max-width: 720px; }
+  .post h1 { font-size: 1.8rem; }
+  .meta { color: var(--muted); font-size: 0.85rem; }
+  .buy-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .note { color: var(--muted); font-size: 0.85rem; margin-top: 1.5rem; }
+</style>
