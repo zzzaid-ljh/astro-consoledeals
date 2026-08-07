@@ -17,6 +17,21 @@ NET_DISPLAY = {
 }
 NET_ORDER = {"amazon": 0, "gmg": 1, "humble": 2, "fanatical": 3}
 
+def msrp_for(platform: str) -> float:
+    """按平台预填参考售价（USD）。仅作起点，用户可在 Excel 里核对/修改。"""
+    p = str(platform).lower()
+    if "switch 2" in p:
+        return 69.99
+    if "switch" in p:
+        return 59.99
+    if "playstation 5" in p or "ps5" in p:
+        return 69.99
+    if "xbox" in p:
+        return 69.99
+    if "pc" in p or "steam" in p:
+        return 59.99
+    return 59.99
+
 HEADER_FILL = PatternFill("solid", fgColor="15A06B")
 HEADER_FONT = Font(bold=True, color="FFFFFF", size=11)
 FILL_BACK = PatternFill("solid", fgColor="FFF4CC")   # 回填列高亮
@@ -82,7 +97,8 @@ ws2["A1"].font = TITLE_FONT
 ws2.merge_cells("A1:H1")
 
 hdr2 = ["序号", "网站/联盟", "游戏名称", "平台", "标签",
-        "当前商品链接（具体商品页）", "链接状态", "【请回填】联盟推广链接", "回填状态"]
+        "当前商品链接（具体商品页）", "链接状态",
+        "原价/MSRP(USD,参考)", "现价(USD,选填)", "【请回填】联盟推广链接", "回填状态"]
 ws2.append([])
 ws2.append(hdr2)
 hrow2 = ws2.max_row
@@ -110,7 +126,9 @@ for i, d in enumerate(deals_sorted, start=1):
         ", ".join(d.get("tags", [])),
         prod_url,
         status_label,
-        "",   # 回填列
+        d.get("originalPrice", msrp_for(d["platform"])),   # 原价 / MSRP（参考）
+        d.get("price", ""),                                # 现价（选填）
+        d.get("storeUrl", ""),   # 回填列（保留已有联盟链接，避免重生成丢数据）
         "",   # 回填状态
     ]
     ws2.append(row)
@@ -118,7 +136,7 @@ for i, d in enumerate(deals_sorted, start=1):
     for c in range(1, len(hdr2) + 1):
         cell = ws2.cell(row=rr, column=c)
         cell.border = BORDER
-        if c == 8:  # 回填列
+        if c == 10:  # 回填列（黄底高亮）
             cell.fill = FILL_BACK
             cell.alignment = WRAP
         elif c == 6:  # 当前商品链接
@@ -127,16 +145,16 @@ for i, d in enumerate(deals_sorted, start=1):
             cell.alignment = CENTER
             if url_status == "predicted":
                 cell.fill = FILL_PREDICT
-        elif c in (3, 5):  # 游戏名称、标签
+        elif c in (3, 5, 8, 9):  # 游戏名称、标签、价格列
             cell.alignment = WRAP
         else:  # 序号/网站/平台/回填状态
             cell.alignment = CENTER
 
-widths2 = [6, 20, 38, 20, 22, 50, 14, 50, 12]
+widths2 = [6, 20, 38, 20, 22, 50, 14, 16, 16, 50, 12]
 for i, w in enumerate(widths2, start=1):
     ws2.column_dimensions[chr(64 + i)].width = w
 ws2.freeze_panes = "A4"
-ws2.auto_filter.ref = f"A{hrow2}:I{ws2.max_row}"
+ws2.auto_filter.ref = f"A{hrow2}:K{ws2.max_row}"
 
 # ---------- Sheet 3: 填写说明 ----------
 ws3 = wb.create_sheet("③填写说明")
@@ -154,8 +172,13 @@ guide = [
     "- 『已核实』：商品页 URL 已逐个联网核实，点开就是正确商品，直接用它生成联盟链接即可。",
     "- 『推测·请确认』（橙色单元格）：GMG（被反爬保护，无法自动核实）和 Humble（官方商品页未搜到）这两家给的是『按命名规律推测的链接』，点开若是 404 或跳首页，请在该网站搜索框里搜游戏名，用你搜到的真实商品页生成联盟链接。",
     "",
+    "价格列说明：",
+    "- 『原价/MSRP(USD,参考)』：我按平台预填了参考售价（Switch $59.99 / Switch 2·PS5·Xbox $69.99），你可按实际核对修改。",
+    "- 『现价(USD,选填)』：留空即可；等你拿到真实促销价再填，网站会自动算出并显示『Save X%』折扣徽章。",
+    "- 展示的价格需与实际一致，长期建议用 Amazon Product Advertising API（PA-API）自动同步，避免过期价导致合规风险。",
+    "",
     "注意事项：",
-    "- 亚马逊：别手标价格、别用短链（bit.ly等）、文章页必须有 FTC 声明（网站模板已内置）。",
+    "- 亚马逊：别用短链（bit.ly等）、文章页必须有 FTC 声明（网站模板已内置）。",
     "- 一个游戏当前只挂了一个网站（见『网站/联盟』列），所以每行只需填那一家对应的推广链接。",
     "- 若你某游戏想同时挂多家（比如 GMG + Humble），告诉我，我可以把那行拆成多行。",
     "- 推广链接必须是『带你自己联盟ID』的完整链接，否则佣金不算你的。",

@@ -16,6 +16,8 @@ interface Deal {
   lastChecked: string;
   tags?: string[];
   image?: string;
+  price?: number;
+  originalPrice?: number;
 }
 
 const { deal } = Astro.props as { deal: Deal };
@@ -29,6 +31,20 @@ const storeName =
         : "Fanatical";
 const cover = deal.image ? deal.image : `/covers/${deal.id}.svg`;
 const tags = (deal.tags || []).join(" ");
+
+const cur = deal.price;
+const orig = deal.originalPrice;
+const showPrice = cur !== undefined || orig !== undefined;
+const savingsPct =
+  cur !== undefined && orig !== undefined && cur < orig
+    ? Math.round((1 - cur / orig) * 100)
+    : null;
+const priceMain =
+  cur !== undefined
+    ? `$${cur.toFixed(2)}`
+    : orig !== undefined
+      ? `MSRP $${orig.toFixed(2)}`
+      : "";
 ---
 
 <article class="deal-card" data-title={deal.title} data-platform={deal.platform} data-tags={tags}>
@@ -37,6 +53,17 @@ const tags = (deal.tags || []).join(" ");
     <h3>{deal.title}</h3>
     <span class="platform">{deal.platform}</span>
   </div>
+  {
+    showPrice && (
+      <div class="price-row">
+        <span class="price">{priceMain}</span>
+        {cur !== undefined && orig !== undefined && orig !== cur && (
+          <span class="regular">${orig.toFixed(2)}</span>
+        )}
+        {savingsPct !== null && <span class="savings">Save {savingsPct}%</span>}
+      </div>
+    )
+  }
   <p class="note">{deal.note}</p>
   <AffiliateLink network={deal.network} href={deal.storeUrl} cta={`View on ${storeName}`} />
   <p class="checked">Last checked: {deal.lastChecked} — verify price on store.</p>
@@ -87,23 +114,28 @@ const tags = (deal.tags || []).join(" ");
   .price-row {
     display: flex;
     align-items: baseline;
-    gap: 0.6rem;
-    margin: 0.4rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.3rem 0;
   }
   .price {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--text);
   }
   .regular {
     color: var(--muted);
     text-decoration: line-through;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
   }
   .savings {
-    color: #ffb454;
-    font-weight: 600;
-    font-size: 0.9rem;
+    color: #e07b00;
+    font-weight: 700;
+    font-size: 0.72rem;
+    background: #fff3e0;
+    padding: 0.1rem 0.4rem;
+    border-radius: 999px;
   }
   .note {
     color: var(--muted);

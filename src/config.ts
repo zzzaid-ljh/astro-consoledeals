@@ -8,11 +8,18 @@
  *  ✅ 下方 build 函数和接口一般不用动。
  *
  *  重要合规提醒（Amazon Associates）：
- *  - 不要手改价格、不要用短链（bit.ly 等）、邮件里只能链你的文章页不能直链联盟。
+ *  - 展示价格需与实际一致：当前用 Excel 里的参考 MSRP + 手动现价；长期建议接 Amazon PA-API 自动同步，避免过期价。
+ *  - 不要用短链（bit.ly 等）、邮件里只能链你的文章页不能直链联盟。
  *  - 每个含联盟链接的页面底部必须有 FTC 声明（本模板 Footer 已内置）。
  */
 
 export type Network = "amazon" | "gmg" | "humble" | "fanatical";
+
+// 站点根域名（影响 canonical / OG / sitemap 绝对链接）。换域名时只改这一处。
+export const SITE_URL = "https://consoledeals.cc.cd";
+
+// Google Analytics 4 衡量 ID（形如 G-XXXXXXXXXX）。留空 = 不加载分析；填好后全站自动启用。
+export const GA4_ID = "";
 
 // ===========================================================================
 //  ⬇⬇⬇  你只需要改这里（申请通过后，把占位符换成你自己的值） ⬇⬇⬇

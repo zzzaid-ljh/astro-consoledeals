@@ -40,6 +40,15 @@ def find_img(prefix: str, k: int) -> Path | None:
     hits = sorted(IMG_SRC.glob(pat))
     return hits[0] if hits else None
 
+def fnum(v) -> float | None:
+    """把 '$59.99' / '59.99' / '' 解析成 float，失败返回 None。"""
+    if v is None:
+        return None
+    try:
+        return float(str(v).replace("$", "").replace(",", "").strip())
+    except Exception:
+        return None
+
 # 现有 deals（用于继承 note / lastChecked / productUrl）
 existing = {d["id"]: d for d in json.loads(DEALS.read_text(encoding="utf-8"))["deals"]}
 
@@ -47,7 +56,7 @@ wb = openpyxl.load_workbook(XLSX)
 ws = wb["②游戏链接填报表"]
 hdr_row = None
 for r in range(1, 6):
-    vals = [ws.cell(row=r, column=c).value for c in range(1, 9)]
+    vals = [ws.cell(row=r, column=c).value for c in range(1, 12)]
     if any(v and "游戏名称" in str(v) for v in (vals or [])):
         hdr_row = r
         break
@@ -61,7 +70,9 @@ for idx, r in enumerate(range(hdr_row + 1, ws.max_row + 1), start=1):
     title = ws.cell(row=r, column=3).value
     platform = ws.cell(row=r, column=4).value or ""
     tags_raw = ws.cell(row=r, column=5).value or ""
-    link = ws.cell(row=r, column=8).value or ""
+    orig_raw = ws.cell(row=r, column=8).value
+    cur_raw = ws.cell(row=r, column=9).value
+    link = ws.cell(row=r, column=10).value or ""
     if not title or not link:
         continue
     net = NET_MAP.get(str(net_raw).strip().lower())
@@ -73,6 +84,8 @@ for idx, r in enumerate(range(hdr_row + 1, ws.max_row + 1), start=1):
     tags = [t.strip() for t in str(tags_raw).split(",") if t.strip()]
     is_search = "search" in str(link).lower()
     url_status = "search" if is_search else "verified"
+    orig_v = fnum(orig_raw)
+    cur_v = fnum(cur_raw)
 
     # 图片
     prefix = PREFIX[net]
@@ -110,8 +123,13 @@ for idx, r in enumerate(range(hdr_row + 1, ws.max_row + 1), start=1):
         d["image"] = image
     if product_url:
         d["productUrl"] = product_url
+    if orig_v is not None:
+        d["originalPrice"] = orig_v
+    if cur_v is not None:
+        d["price"] = cur_v
     new_deals.append(d)
-    report.append(f"  ✓ [{idx:2d}] {net:9s} {title[:36]:36s} img={'有' if image else '缺'}")
+    pr = "价:无" if orig_v is None else f"MSRP ${orig_v:g}" + (f" 现 ${cur_v:g}" if cur_v is not None else "")
+    report.append(f"  ✓ [{idx:2d}] {net:9s} {title[:34]:34s} img={'有' if image else '缺'} {pr}")
 
 # 写回 deals.json
 data = {"deals": new_deals}
