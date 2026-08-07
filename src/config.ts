@@ -73,30 +73,29 @@ export const affiliates: Record<Network, AffiliateConfig> = {
   },
 
   // ── Green Man Gaming（经 Tapfiliate）────────────────────────────────
-  // 真实格式：https://www.greenmangaming.com/?tap_a=<A>&tap_s=<S>&tap_redirect=<编码后的目标URL>
+  // 过审阶段：链接已是用户在 Excel 填的真实商品页，原样透传（不拼占位符，避免坏链）。
+  // 等 GMG 联盟通过后，把后台给的真实推广链接（完整 URL）直接填进 Excel 链接列即可，
+  // 透传会原样保留；若想自动拼 tap_a/tap_s，再把下面改回拼接逻辑。
   gmg: {
     label: "Green Man Gaming",
-    enabled: false,
-    build: (targetUrl) =>
-      `https://www.greenmangaming.com/?tap_a=${GMG_TAP_A}&tap_s=${GMG_TAP_S}&tap_redirect=${encodeURIComponent(targetUrl)}`,
+    enabled: true,
+    build: (targetUrl) => targetUrl,
   },
 
   // ── Humble Bundle（经 Impact）───────────────────────────────────────
-  // 真实格式：https://www.humblebundle.com/store/<slug>?partner=<ID>
+  // 同上，过审阶段原样透传真实链接。
   humble: {
     label: "Humble Bundle",
-    enabled: false,
-    build: (targetUrl) =>
-      `${targetUrl}${targetUrl.includes("?") ? "&" : "?"}partner=${HUMBLE_PARTNER}`,
+    enabled: true,
+    build: (targetUrl) => targetUrl,
   },
 
   // ── Fanatical（经 Partnerize / 自有）────────────────────────────────
-  // 常见格式：https://www.fanatical.com/<path>?affiliate=<ID>
+  // 同上，过审阶段原样透传真实链接。
   fanatical: {
     label: "Fanatical",
-    enabled: false,
-    build: (targetUrl) =>
-      `${targetUrl}${targetUrl.includes("?") ? "&" : "?"}affiliate=${FANATICAL_AFF}`,
+    enabled: true,
+    build: (targetUrl) => targetUrl,
   },
 };
 

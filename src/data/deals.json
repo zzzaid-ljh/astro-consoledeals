@@ -1,953 +1,938 @@
 {
-  "lastUpdated": "2026-08-05",
-  "notes": "手动策展目录。价格会变动，卡片不再手标死价格（Amazon 政策禁止手标价格），只给 'View Deal' 按钮 + 'verify on store' 提示。storeUrl 用各平台搜索链接，避免猜错 ASIN/商品 slug。network 取值：amazon / gmg / humble / fanatical。tags 用于栏目页过滤：popular=常青热门, longtail=长尾/稍冷门, new-release=2024-2026 近期或即将发售, weekly=本周精选策展。",
   "deals": [
-    {
-      "id": "mario-kart-8-deluxe",
-      "title": "Mario Kart 8 Deluxe",
-      "platform": "Nintendo Switch",
-      "network": "amazon",
-      "storeUrl": "https://amzn.to/3RRsVdI",
-      "productUrl": "https://www.amazon.com/dp/B01N1037CV",
-      "urlStatus": "verified",
-      "note": "Nintendo first-party rarely dips below MSRP. Best discounts show up in eShop seasonal sales and bundle offers.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "weekly"
-      ],
-      "image": "/covers/mario-kart-8-deluxe.jpg"
-    },
-    {
-      "id": "zelda-tears-of-the-kingdom",
-      "title": "The Legend of Zelda: Tears of the Kingdom",
-      "platform": "Nintendo Switch",
-      "network": "amazon",
-      "storeUrl": "https://amzn.to/4xrrkud",
-      "productUrl": "https://www.amazon.com/dp/B097B2YWFX",
-      "urlStatus": "verified",
-      "note": "A 2023 GOTY contender. Digital editions occasionally drop during Nintendo eShop holiday sales.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "weekly"
-      ],
-      "image": "/covers/zelda-tears-of-the-kingdom.jpg"
-    },
-    {
-      "id": "super-mario-bros-wonder",
-      "title": "Super Mario Bros. Wonder",
-      "platform": "Nintendo Switch",
-      "network": "amazon",
-      "storeUrl": "https://amzn.to/45Plnv6",
-      "productUrl": "https://www.amazon.com/dp/B0C8VHZR14",
-      "urlStatus": "verified",
-      "note": "The definitive 2D Mario. Full price most of the year; watch for holiday and Black Friday dips.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "weekly"
-      ],
-      "image": "/covers/super-mario-bros-wonder.jpg"
-    },
     {
       "id": "animal-crossing-new-horizons",
       "title": "Animal Crossing: New Horizons",
-      "platform": "Nintendo Switch",
       "network": "amazon",
+      "platform": "Nintendo Switch",
+      "tags": [
+        "popular",
+        "longtail"
+      ],
       "storeUrl": "https://amzn.to/4wNJW7Q",
-      "productUrl": "https://www.amazon.com/dp/B07SR1BRN5",
-      "urlStatus": "verified",
       "note": "The cozy-life sim evergreen. Often bundled with consoles; standalone dips appear in big seasonal sales.",
       "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "longtail"
-      ],
-      "image": "/covers/animal-crossing-new-horizons.jpg"
-    },
-    {
-      "id": "super-mario-odyssey",
-      "title": "Super Mario Odyssey",
-      "platform": "Nintendo Switch",
-      "network": "amazon",
-      "storeUrl": "https://amzn.to/45QLG45",
-      "productUrl": "https://www.amazon.com/dp/B01MY7GHKJ",
       "urlStatus": "verified",
-      "note": "Still the best 3D Mario. Frequently discounted in Nintendo's budget 'Selects' range.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "longtail"
-      ],
-      "image": "/covers/super-mario-odyssey.jpg"
-    },
-    {
-      "id": "pokemon-scarlet-violet",
-      "title": "Pokémon Scarlet & Violet",
-      "platform": "Nintendo Switch",
-      "network": "amazon",
-      "storeUrl": "https://amzn.to/4q4oucf",
-      "productUrl": "https://www.amazon.com/dp/B0B324SSTJ",
-      "urlStatus": "verified",
-      "note": "The open-world Pokémon duo. Dual-pack and eShop sales appear a few times a year.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "weekly"
-      ],
-      "image": "/covers/pokemon-scarlet-violet.jpg"
-    },
-    {
-      "id": "mario-kart-world",
-      "title": "Mario Kart World",
-      "platform": "Nintendo Switch 2",
-      "network": "amazon",
-      "storeUrl": "https://amzn.to/4pZh1et",
-      "productUrl": "https://www.amazon.com/dp/B0FDMVPVW9",
-      "urlStatus": "verified",
-      "note": "The Switch 2 launch racer. New entry, so expect list price; bundle-with-console deals are the first to appear.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "new-release"
-      ],
-      "image": "/covers/mario-kart-world.jpg"
+      "image": "/covers/animal-crossing-new-horizons.jpg",
+      "productUrl": "https://www.amazon.com/dp/B07SR1BRN5"
     },
     {
       "id": "donkey-kong-bananza",
       "title": "Donkey Kong Bananza",
-      "platform": "Nintendo Switch 2",
       "network": "amazon",
+      "platform": "Nintendo Switch 2",
+      "tags": [
+        "new-release"
+      ],
       "storeUrl": "https://amzn.to/4q2cHLd",
-      "productUrl": "https://www.amazon.com/dp/B0F66KLYVH",
-      "urlStatus": "verified",
       "note": "A fresh 3D platformer exclusive to Switch 2. New release — watch for holiday bundles later in the year.",
       "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/donkey-kong-bananza.jpg",
+      "productUrl": "https://www.amazon.com/dp/B0F66KLYVH"
+    },
+    {
+      "id": "mario-kart-8-deluxe",
+      "title": "Mario Kart 8 Deluxe",
+      "network": "amazon",
+      "platform": "Nintendo Switch",
       "tags": [
+        "popular",
+        "weekly"
+      ],
+      "storeUrl": "https://amzn.to/3RRsVdI",
+      "note": "Nintendo first-party rarely dips below MSRP. Best discounts show up in eShop seasonal sales and bundle offers.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/mario-kart-8-deluxe.jpg",
+      "productUrl": "https://www.amazon.com/dp/B01N1037CV"
+    },
+    {
+      "id": "mario-kart-world",
+      "title": "Mario Kart World",
+      "network": "amazon",
+      "platform": "Nintendo Switch 2",
+      "tags": [
+        "popular",
         "new-release"
       ],
-      "image": "/covers/donkey-kong-bananza.jpg"
-    },
-    {
-      "id": "metroid-prime-4-beyond",
-      "title": "Metroid Prime 4: Beyond",
-      "platform": "Nintendo Switch",
-      "network": "amazon",
-      "storeUrl": "https://amzn.to/4fRrp33",
-      "productUrl": "https://www.amazon.com/dp/B0FQXR2NPH",
+      "storeUrl": "https://amzn.to/4pZh1et",
+      "note": "The Switch 2 launch racer. New entry, so expect list price; bundle-with-console deals are the first to appear.",
+      "lastChecked": "2026-08-05",
       "urlStatus": "verified",
-      "note": "The long-awaited return of Samus. Pre-orders and launch-week stock are the first buying windows.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "new-release"
-      ],
-      "image": "/covers/metroid-prime-4-beyond.jpg"
-    },
-    {
-      "id": "zelda-breath-of-the-wild",
-      "title": "The Legend of Zelda: Breath of the Wild",
-      "platform": "Nintendo Switch",
-      "network": "amazon",
-      "storeUrl": "https://amzn.to/4fUg8zb",
-      "productUrl": "https://www.amazon.com/dp/B01MS6MO77",
-      "urlStatus": "verified",
-      "note": "The open-world classic. Continuously discounted in Nintendo Selects; a safe cheap pickup.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "longtail"
-      ],
-      "image": "/covers/zelda-breath-of-the-wild.jpg"
-    },
-    {
-      "id": "luigis-mansion-3",
-      "title": "Luigi's Mansion 3",
-      "platform": "Nintendo Switch",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=luigis+mansion+3",
-      "productUrl": "https://www.greenmangaming.com/games/luigis-mansion-3",
-      "urlStatus": "predicted",
-      "note": "Charming solo/co-op haunted-house action. GMG digital keys often sit below Nintendo eShop pricing.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "super-smash-bros-ultimate",
-      "title": "Super Smash Bros. Ultimate",
-      "platform": "Nintendo Switch",
-      "network": "amazon",
-      "storeUrl": "https://amzn.to/4xqwYwK",
-      "productUrl": "https://www.amazon.com/dp/B07BHGGHX1",
-      "urlStatus": "verified",
-      "note": "The ultimate party fighter. Staple gift title; dips show up every major sale period.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "longtail"
-      ],
-      "image": "/covers/super-smash-bros-ultimate.jpg"
-    },
-    {
-      "id": "splatoon-3",
-      "title": "Splatoon 3",
-      "platform": "Nintendo Switch",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=splatoon+3",
-      "productUrl": "https://www.greenmangaming.com/games/splatoon-3",
-      "urlStatus": "predicted",
-      "note": "Nintendo's ink-splatting shooter. Digital keys through GMG routinely beat eShop direct.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "longtail"
-      ]
-    },
-    {
-      "id": "kirby-and-the-forgotten-land",
-      "title": "Kirby and the Forgotten Land",
-      "platform": "Nintendo Switch",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=kirby+and+the+forgotten+land",
-      "productUrl": "https://www.greenmangaming.com/games/kirby-and-the-forgotten-land",
-      "urlStatus": "predicted",
-      "note": "The pink puffball's first 3D adventure. Quietly discounted several times a year.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "pikmin-4",
-      "title": "Pikmin 4",
-      "platform": "Nintendo Switch",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=pikmin+4",
-      "productUrl": "https://www.greenmangaming.com/games/pikmin-4",
-      "urlStatus": "predicted",
-      "note": "Accessible strategy-adventure. GMG keys typically undercut the eShop list price.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "xenoblade-chronicles-3",
-      "title": "Xenoblade Chronicles 3",
-      "platform": "Nintendo Switch",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=xenoblade+chronicles+3",
-      "productUrl": "https://www.greenmangaming.com/games/xenoblade-chronicles-3",
-      "urlStatus": "predicted",
-      "note": "A massive JRPG. Long RPGs like this see steady digital-key discounts on GMG.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "bayonetta-3",
-      "title": "Bayonetta 3",
-      "platform": "Nintendo Switch",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=bayonetta+3",
-      "productUrl": "https://www.greenmangaming.com/games/bayonetta-3",
-      "urlStatus": "predicted",
-      "note": "PlatinumGames' stylish action title. Niche but frequently price-cut on key stores.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "fire-emblem-engage",
-      "title": "Fire Emblem Engage",
-      "platform": "Nintendo Switch",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=fire+emblem+engage",
-      "productUrl": "https://www.greenmangaming.com/games/fire-emblem-engage",
-      "urlStatus": "predicted",
-      "note": "Tactical RPG with a loyal fanbase. Discounts appear a few months after release.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
+      "image": "/covers/mario-kart-world.jpg",
+      "productUrl": "https://www.amazon.com/dp/B0FDMVPVW9"
     },
     {
       "id": "mario-party-superstars",
       "title": "Mario Party Superstars",
-      "platform": "Nintendo Switch",
       "network": "amazon",
+      "platform": "Nintendo Switch",
+      "tags": [
+        "longtail"
+      ],
       "storeUrl": "https://amzn.to/4hjNmdI",
-      "productUrl": "https://www.amazon.com/dp/B097B2HQ5R",
-      "urlStatus": "verified",
       "note": "The go-to local multiplayer party game. Bundle and holiday dips are common.",
       "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ],
-      "image": "/covers/mario-party-superstars.jpg"
-    },
-    {
-      "id": "pokemon-legends-arceus",
-      "title": "Pokémon Legends: Arceus",
-      "platform": "Nintendo Switch",
-      "network": "amazon",
-      "storeUrl": "https://amzn.to/4wUHyft",
-      "productUrl": "https://www.amazon.com/dp/B0914YGQSH",
       "urlStatus": "verified",
-      "note": "The open-world Pokémon prequel. Well past launch — steady Selects-range pricing.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ],
-      "image": "/covers/pokemon-legends-arceus.jpg"
+      "image": "/covers/mario-party-superstars.jpg",
+      "productUrl": "https://www.amazon.com/dp/B097B2HQ5R"
     },
     {
-      "id": "hyrule-warriors-age-of-calamity",
-      "title": "Hyrule Warriors: Age of Calamity",
+      "id": "metroid-prime-4-beyond",
+      "title": "Metroid Prime 4: Beyond",
+      "network": "amazon",
       "platform": "Nintendo Switch",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=hyrule+warriors+age+of+calamity",
-      "productUrl": "https://www.greenmangaming.com/games/hyrule-warriors-age-of-calamity",
-      "urlStatus": "predicted",
-      "note": "Musou-style Zelda spin-off. GMG keys usually cheaper than eShop direct.",
-      "lastChecked": "2026-08-05",
       "tags": [
-        "longtail"
-      ]
+        "new-release"
+      ],
+      "storeUrl": "https://amzn.to/4fRrp33",
+      "note": "The long-awaited return of Samus. Pre-orders and launch-week stock are the first buying windows.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/metroid-prime-4-beyond.jpg",
+      "productUrl": "https://www.amazon.com/dp/B0FQXR2NPH"
     },
     {
       "id": "nintendo-switch-sports",
       "title": "Nintendo Switch Sports",
-      "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://amzn.to/4bxrRCl",
-      "productUrl": "https://www.amazon.com/dp/B09KRK6C82",
-      "urlStatus": "verified",
-      "note": "Family-friendly motion sports. Often bundled with the Switch Lite or OLED.",
-      "lastChecked": "2026-08-05",
+      "platform": "Nintendo Switch",
       "tags": [
         "longtail"
       ],
-      "image": "/covers/nintendo-switch-sports.jpg"
+      "storeUrl": "https://amzn.to/4bxrRCl",
+      "note": "Family-friendly motion sports. Often bundled with the Switch Lite or OLED.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/nintendo-switch-sports.jpg",
+      "productUrl": "https://www.amazon.com/dp/B09KRK6C82"
+    },
+    {
+      "id": "pok-mon-legends-arceus",
+      "title": "Pokémon Legends: Arceus",
+      "network": "amazon",
+      "platform": "Nintendo Switch",
+      "tags": [
+        "longtail"
+      ],
+      "storeUrl": "https://amzn.to/4wUHyft",
+      "note": "Compare editions and current price on Amazon Associates. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/pok-mon-legends-arceus.jpg"
+    },
+    {
+      "id": "pok-mon-scarlet-violet",
+      "title": "Pokémon Scarlet & Violet",
+      "network": "amazon",
+      "platform": "Nintendo Switch",
+      "tags": [
+        "popular",
+        "weekly"
+      ],
+      "storeUrl": "https://amzn.to/4q4oucf",
+      "note": "Compare editions and current price on Amazon Associates. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/pok-mon-scarlet-violet.jpg"
     },
     {
       "id": "ring-fit-adventure",
       "title": "Ring Fit Adventure",
-      "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://amzn.to/4z1cmfZ",
-      "productUrl": "https://www.amazon.com/dp/B07XV4NHHN",
-      "urlStatus": "verified",
-      "note": "Fitness-RPG hybrid. Supply-driven pricing; watch for restocks and sale events.",
-      "lastChecked": "2026-08-05",
+      "platform": "Nintendo Switch",
       "tags": [
         "longtail"
       ],
-      "image": "/covers/ring-fit-adventure.jpg"
-    },
-    {
-      "id": "mario-rabbids-sparks-of-hope",
-      "title": "Mario + Rabbids Sparks of Hope",
-      "platform": "Nintendo Switch",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=mario+rabbids+sparks+of+hope",
-      "productUrl": "https://www.greenmangaming.com/games/mario-rabbids-sparks-of-hope",
-      "urlStatus": "predicted",
-      "note": "Turn-based tactical spin on Mario. Deeply discounted on key stores post-launch.",
+      "storeUrl": "https://amzn.to/4z1cmfZ",
+      "note": "Fitness-RPG hybrid. Supply-driven pricing; watch for restocks and sale events.",
       "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "marvels-spider-man-2",
-      "title": "Marvel's Spider-Man 2",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=marvel+spiderman+2+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/marvels-spider-man-2",
-      "urlStatus": "predicted",
-      "note": "PS5 console exclusive. GMG key sometimes beats PS Store credit pricing.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "weekly"
-      ]
-    },
-    {
-      "id": "god-of-war-ragnarok",
-      "title": "God of War Ragnarök",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=god+of+war+ragnarok+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/god-of-war-ragnarok",
-      "urlStatus": "predicted",
-      "note": "The Norse saga finale. A perennial best-seller that dips during PlayStation sales.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "weekly"
-      ]
-    },
-    {
-      "id": "horizon-forbidden-west",
-      "title": "Horizon Forbidden West",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=horizon+forbidden+west+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/horizon-forbidden-west",
-      "urlStatus": "predicted",
-      "note": "Guerrilla's open-world sequel. PSN digital codes on GMG undercut the store.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "weekly"
-      ]
-    },
-    {
-      "id": "the-last-of-us-part-ii-remastered",
-      "title": "The Last of Us Part II Remastered",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=last+of+us+part+2+remastered+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/the-last-of-us-part-ii-remastered",
-      "urlStatus": "predicted",
-      "note": "The remastered PS5 edition. Steady discounts track the HBO show's seasons.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "longtail"
-      ]
-    },
-    {
-      "id": "ghost-of-tsushima",
-      "title": "Ghost of Tsushima",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=ghost+of+tsushima+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/ghost-of-tsushima",
-      "urlStatus": "predicted",
-      "note": "Sucker Punch's samurai epic. Director's Cut on PS5 sees regular key-store cuts.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "longtail"
-      ]
-    },
-    {
-      "id": "demons-souls",
-      "title": "Demon's Souls",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=demons+souls+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/demons-souls",
-      "urlStatus": "predicted",
-      "note": "Bluepoint's gorgeous PS5 remake. Launched at $69.99; key stores undercut over time.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "ratchet-and-clank-rift-apart",
-      "title": "Ratchet & Clank: Rift Apart",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=ratchet+and+clank+rift+apart+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/ratchet-and-clank-rift-apart",
-      "urlStatus": "predicted",
-      "note": "The dimension-hopping showcase platformer. Frequent GMG price drops.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "longtail"
-      ]
-    },
-    {
-      "id": "returnal",
-      "title": "Returnal",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=returnal+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/returnal",
-      "urlStatus": "predicted",
-      "note": "Housemarque's roguelike shooter. Deep cuts appear well after launch.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "final-fantasy-vii-rebirth",
-      "title": "Final Fantasy VII Rebirth",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=final+fantasy+7+rebirth+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/final-fantasy-vii-rebirth",
-      "urlStatus": "predicted",
-      "note": "The middle chapter of the FFVII remake. New release — first real discounts land months in.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "new-release",
-        "weekly"
-      ]
-    },
-    {
-      "id": "final-fantasy-xvi",
-      "title": "Final Fantasy XVI",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=final+fantasy+16+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/final-fantasy-xvi",
-      "urlStatus": "predicted",
-      "note": "Square's action-Fantasy epic. Steady key-store discounts post-launch.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "longtail"
-      ]
-    },
-    {
-      "id": "spider-man-miles-morales",
-      "title": "Marvel's Spider-Man: Miles Morales",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=spider-man+miles+morales+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/spider-man-miles-morales",
-      "urlStatus": "predicted",
-      "note": "The shorter standalone Spidey entry. Often bundled with the full sequel.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "gran-turismo-7",
-      "title": "Gran Turismo 7",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=gran+turismo+7+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/gran-turismo-7",
-      "urlStatus": "predicted",
-      "note": "Polyphony's racing sim. Steady discounts; a good pick for racing fans.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "astro-bot",
-      "title": "Astro Bot",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=astro+bot+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/astro-bot",
-      "urlStatus": "predicted",
-      "note": "The critically adored 2024 platformer. New release — first price cuts land later in the year.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "new-release"
-      ]
-    },
-    {
-      "id": "rise-of-the-ronin",
-      "title": "Rise of the Ronin",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=rise+of+the+ronin+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/rise-of-the-ronin",
-      "urlStatus": "predicted",
-      "note": "Team Ninja's open-world action RPG. 2024 release with deepening key-store discounts.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "new-release"
-      ]
-    },
-    {
-      "id": "helldivers-2",
-      "title": "Helldivers 2",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=helldivers+2+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/helldivers-2",
-      "urlStatus": "predicted",
-      "note": "The surprise 2024 co-op hit. Demand-driven pricing; key stores occasionally undercut.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "new-release",
-        "weekly"
-      ]
-    },
-    {
-      "id": "stellar-blade",
-      "title": "Stellar Blade",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=stellar+blade+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/stellar-blade",
-      "urlStatus": "predicted",
-      "note": "Shift Up's stylish action game. 2024 release; first real cuts appear months in.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "new-release"
-      ]
-    },
-    {
-      "id": "black-myth-wukong",
-      "title": "Black Myth: Wukong",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=black+myth+wukong+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/black-myth-wukong",
-      "urlStatus": "predicted",
-      "note": "The 2024 action blockbuster. High demand keeps pricing firm; watch for seasonal drops.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "new-release",
-        "weekly"
-      ]
-    },
-    {
-      "id": "silent-hill-2-remake",
-      "title": "Silent Hill 2 Remake",
-      "platform": "PlayStation 5",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=silent+hill+2+remake+ps5",
-      "productUrl": "https://www.greenmangaming.com/games/silent-hill-2-remake",
-      "urlStatus": "predicted",
-      "note": "Bloober's acclaimed survival-horror remake. 2024 release; cuts follow after the buzz.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "new-release"
-      ]
-    },
-    {
-      "id": "forza-horizon-5",
-      "title": "Forza Horizon 5",
-      "platform": "Xbox",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=forza+horizon+5+xbox",
-      "productUrl": "https://www.greenmangaming.com/games/forza-horizon-5",
-      "urlStatus": "predicted",
-      "note": "The墨西哥 open-world racer. Xbox digital codes on GMG routinely beat the MS Store.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "weekly"
-      ]
-    },
-    {
-      "id": "halo-infinite",
-      "title": "Halo Infinite",
-      "platform": "Xbox",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=halo+infinite+xbox",
-      "productUrl": "https://www.greenmangaming.com/games/halo-infinite",
-      "urlStatus": "predicted",
-      "note": "343's flagship shooter. Campaign + multiplayer; deep key-store discounts.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "longtail"
-      ]
-    },
-    {
-      "id": "gears-5",
-      "title": "Gears 5",
-      "platform": "Xbox",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=gears+5+xbox",
-      "productUrl": "https://www.greenmangaming.com/games/gears-5",
-      "urlStatus": "predicted",
-      "note": "The cover-shooter revival. Long on the market; steady heavy cuts.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "microsoft-flight-simulator",
-      "title": "Microsoft Flight Simulator",
-      "platform": "Xbox",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=microsoft+flight+simulator+xbox",
-      "productUrl": "https://www.greenmangaming.com/games/microsoft-flight-simulator",
-      "urlStatus": "predicted",
-      "note": "The realistic flight sim. Premium Deluxe add-ons sell separately; base dips often.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "starfield",
-      "title": "Starfield",
-      "platform": "Xbox",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=starfield+xbox",
-      "productUrl": "https://www.greenmangaming.com/games/starfield",
-      "urlStatus": "predicted",
-      "note": "Bethesda's space RPG. 2023 launch; key stores now sit well below launch price.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "new-release",
-        "longtail"
-      ]
-    },
-    {
-      "id": "indiana-jones-great-circle",
-      "title": "Indiana Jones and the Great Circle",
-      "platform": "Xbox",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=indiana+jones+great+circle+xbox",
-      "productUrl": "https://www.greenmangaming.com/games/indiana-jones-great-circle",
-      "urlStatus": "predicted",
-      "note": "MachineGames' 2024 adventure. New release — first discounts appear months after launch.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "new-release"
-      ]
-    },
-    {
-      "id": "sea-of-thieves",
-      "title": "Sea of Thieves",
-      "platform": "Xbox",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=sea+of+thieves+xbox",
-      "productUrl": "https://www.greenmangaming.com/games/sea-of-thieves",
-      "urlStatus": "predicted",
-      "note": "Rare's shared-world pirate sim. Now on more platforms; frequent key-store cuts.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "hi-fi-rush",
-      "title": "Hi-Fi Rush",
-      "platform": "Xbox",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=hi+fi+rush+xbox",
-      "productUrl": "https://www.greenmangaming.com/games/hi-fi-rush",
-      "urlStatus": "predicted",
-      "note": "Tango's rhythm-action gem. Quietly discounted; a cheap, cheerful pickup.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
-    },
-    {
-      "id": "call-of-duty-black-ops-6",
-      "title": "Call of Duty: Black Ops 6",
-      "platform": "Cross-platform",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=call+of+duty+black+ops+6",
-      "productUrl": "https://www.greenmangaming.com/games/call-of-duty-black-ops-6",
-      "urlStatus": "predicted",
-      "note": "GMG digital keys usually undercut console disc prices and work across Xbox, PS, and PC.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "weekly"
-      ]
-    },
-    {
-      "id": "ea-sports-fc-25",
-      "title": "EA Sports FC 25",
-      "platform": "Cross-platform",
-      "network": "humble",
-      "storeUrl": "https://www.humblebundle.com/store?search=ea+sports+fc+25",
-      "productUrl": "https://www.humblebundle.com/store/ea-sports-fc-25",
-      "urlStatus": "predicted",
-      "note": "Humble's digital store runs frequent promos; previous FC entries hit half-price within months.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "weekly"
-      ]
-    },
-    {
-      "id": "hogwarts-legacy",
-      "title": "Hogwarts Legacy",
-      "platform": "Cross-platform",
-      "network": "fanatical",
-      "storeUrl": "https://www.fanatical.com/en/game/hogwarts-legacy",
-      "productUrl": "https://www.fanatical.com/en/game/hogwarts-legacy",
       "urlStatus": "verified",
-      "note": "Fanatical clears older hits hard — often 50%+ off during site-wide events.",
-      "lastChecked": "2026-08-05",
+      "image": "/covers/ring-fit-adventure.jpg",
+      "productUrl": "https://www.amazon.com/dp/B07XV4NHHN"
+    },
+    {
+      "id": "super-mario-bros-wonder",
+      "title": "Super Mario Bros. Wonder",
+      "network": "amazon",
+      "platform": "Nintendo Switch",
       "tags": [
         "popular",
         "weekly"
-      ]
+      ],
+      "storeUrl": "https://amzn.to/45Plnv6",
+      "note": "The definitive 2D Mario. Full price most of the year; watch for holiday and Black Friday dips.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/super-mario-bros-wonder.jpg",
+      "productUrl": "https://www.amazon.com/dp/B0C8VHZR14"
     },
     {
-      "id": "elden-ring",
-      "title": "Elden Ring",
-      "platform": "Cross-platform",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=elden+ring",
-      "productUrl": "https://www.greenmangaming.com/games/elden-ring",
-      "urlStatus": "predicted",
-      "note": "FromSoftware's open-world epic. Key stores undercut physical; DLC 'Shadow of the Erdtree' sold separately.",
+      "id": "super-mario-odyssey",
+      "title": "Super Mario Odyssey",
+      "network": "amazon",
+      "platform": "Nintendo Switch",
+      "tags": [
+        "popular",
+        "longtail"
+      ],
+      "storeUrl": "https://amzn.to/45QLG45",
+      "note": "Still the best 3D Mario. Frequently discounted in Nintendo's budget 'Selects' range.",
       "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/super-mario-odyssey.jpg",
+      "productUrl": "https://www.amazon.com/dp/B01MY7GHKJ"
+    },
+    {
+      "id": "super-smash-bros-ultimate",
+      "title": "Super Smash Bros. Ultimate",
+      "network": "amazon",
+      "platform": "Nintendo Switch",
+      "tags": [
+        "popular",
+        "longtail"
+      ],
+      "storeUrl": "https://amzn.to/4xqwYwK",
+      "note": "The ultimate party fighter. Staple gift title; dips show up every major sale period.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/super-smash-bros-ultimate.jpg",
+      "productUrl": "https://www.amazon.com/dp/B07BHGGHX1"
+    },
+    {
+      "id": "the-legend-of-zelda-breath-of-the-wild",
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "network": "amazon",
+      "platform": "Nintendo Switch",
+      "tags": [
+        "popular",
+        "longtail"
+      ],
+      "storeUrl": "https://amzn.to/4fUg8zb",
+      "note": "Compare editions and current price on Amazon Associates. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/the-legend-of-zelda-breath-of-the-wild.jpg"
+    },
+    {
+      "id": "the-legend-of-zelda-tears-of-the-kingdom",
+      "title": "The Legend of Zelda: Tears of the Kingdom",
+      "network": "amazon",
+      "platform": "Nintendo Switch",
       "tags": [
         "popular",
         "weekly"
-      ]
-    },
-    {
-      "id": "baldurs-gate-3",
-      "title": "Baldur's Gate 3",
-      "platform": "Cross-platform",
-      "network": "humble",
-      "storeUrl": "https://www.humblebundle.com/store?search=baldurs+gate+3",
-      "productUrl": "https://www.humblebundle.com/store/baldurs-gate-3",
-      "urlStatus": "predicted",
-      "note": "GOTY 2023 RPG. Humble frequently bundles the DLC or discounts the base game.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "weekly"
-      ]
-    },
-    {
-      "id": "red-dead-redemption-2",
-      "title": "Red Dead Redemption 2",
-      "platform": "Cross-platform",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=red+dead+redemption+2",
-      "productUrl": "https://www.greenmangaming.com/games/red-dead-redemption-2",
-      "urlStatus": "predicted",
-      "note": "Rockstar's western masterpiece. Six years on, it sits at its lowest-ever key price.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "longtail",
-        "weekly"
-      ]
-    },
-    {
-      "id": "cyberpunk-2077",
-      "title": "Cyberpunk 2077",
-      "platform": "Cross-platform",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=cyberpunk+2077",
-      "productUrl": "https://www.greenmangaming.com/games/cyberpunk-2077",
-      "urlStatus": "predicted",
-      "note": "The 'Ultimate Edition' bundles the acclaimed Phantom Liberty. Deep, steady discounts.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "popular",
-        "longtail",
-        "weekly"
-      ]
-    },
-    {
-      "id": "monster-hunter-wilds",
-      "title": "Monster Hunter Wilds",
-      "platform": "Cross-platform",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=monster+hunter+wilds",
-      "productUrl": "https://www.greenmangaming.com/games/monster-hunter-wilds",
-      "urlStatus": "predicted",
-      "note": "Capcom's 2025 hunting epic. New release — first real cuts appear ahead of seasonal events.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "new-release",
-        "weekly"
-      ]
+      ],
+      "storeUrl": "https://amzn.to/4xrrkud",
+      "note": "Compare editions and current price on Amazon Associates. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/the-legend-of-zelda-tears-of-the-kingdom.jpg"
     },
     {
       "id": "assassins-creed-shadows",
       "title": "Assassin's Creed Shadows",
-      "platform": "Cross-platform",
       "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=assassins+creed+shadows",
-      "productUrl": "https://www.greenmangaming.com/games/assassins-creed-shadows",
-      "urlStatus": "predicted",
-      "note": "Ubisoft's feudal-Japan entry. 2025 release; key stores undercut the Ubisoft Store.",
-      "lastChecked": "2026-08-05",
+      "platform": "Cross-platform",
       "tags": [
         "new-release"
-      ]
+      ],
+      "storeUrl": "https://www.greenmangaming.com/search?query=Assassin%27s%20Creed%20Shadows",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "search",
+      "image": "/covers/assassins-creed-shadows.jpg"
     },
     {
-      "id": "kingdom-come-deliverance-2",
-      "title": "Kingdom Come: Deliverance II",
-      "platform": "Cross-platform",
+      "id": "astor-blade-of-the-monolith",
+      "title": "Astor: Blade of the Monolith",
       "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=kingdom+come+deliverance+2",
-      "productUrl": "https://www.greenmangaming.com/games/kingdom-come-deliverance-2",
-      "urlStatus": "predicted",
-      "note": "Warhorse's 2025 medieval RPG. New release — first discounts land a few months in.",
-      "lastChecked": "2026-08-05",
+      "platform": "PlayStation 5",
       "tags": [
         "new-release"
-      ]
-    },
-    {
-      "id": "gta-vi",
-      "title": "Grand Theft Auto VI",
-      "platform": "Cross-platform",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=grand+theft+auto+6",
-      "productUrl": "https://www.greenmangaming.com/games/grand-theft-auto-6",
-      "urlStatus": "predicted",
-      "note": "The most-anticipated release of the cycle. Pre-orders at list price; the first real deals follow launch.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "new-release",
-        "weekly"
-      ]
-    },
-    {
-      "id": "star-wars-outlaws",
-      "title": "Star Wars Outlaws",
-      "platform": "Cross-platform",
-      "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=star+wars+outlaws",
-      "productUrl": "https://www.greenmangaming.com/games/star-wars-outlaws",
-      "urlStatus": "predicted",
-      "note": "Ubisoft's open-world Star Wars game. 2024 release with deepening key-store discounts.",
-      "lastChecked": "2026-08-05",
-      "tags": [
-        "new-release"
-      ]
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/astor-blade-of-the-monolith-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/astor-blade-of-the-monolith.jpg"
     },
     {
       "id": "avatar-frontiers-of-pandora",
       "title": "Avatar: Frontiers of Pandora",
-      "platform": "Cross-platform",
       "network": "gmg",
-      "storeUrl": "https://www.greenmangaming.com/search/?q=avatar+frontiers+of+pandora",
-      "productUrl": "https://www.greenmangaming.com/games/avatar-frontiers-of-pandora",
-      "urlStatus": "predicted",
+      "platform": "Cross-platform",
+      "tags": [
+        "longtail"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/avatar-frontiers-of-pandora-pc/",
       "note": "Massive's open-world Avatar. Heavily discounted post-launch on key stores.",
       "lastChecked": "2026-08-05",
-      "tags": [
-        "longtail"
-      ]
+      "urlStatus": "verified",
+      "image": "/covers/avatar-frontiers-of-pandora.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/avatar-frontiers-of-pandora"
     },
     {
-      "id": "dying-light-2",
-      "title": "Dying Light 2",
-      "platform": "Cross-platform",
-      "network": "fanatical",
-      "storeUrl": "https://www.fanatical.com/en/game/dying-light-2-stay-human",
-      "productUrl": "https://www.fanatical.com/en/game/dying-light-2-stay-human",
-      "urlStatus": "verified",
-      "note": "Techland's zombie parkour sequel. Stay Human edition bundles DLC; frequent Fanatical cuts.",
-      "lastChecked": "2026-08-05",
+      "id": "bayonetta",
+      "title": "Bayonetta",
+      "network": "gmg",
+      "platform": "Nintendo Switch",
       "tags": [
         "longtail"
-      ]
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/bayonetta-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/bayonetta.jpg"
+    },
+    {
+      "id": "black-myth-wukong",
+      "title": "Black Myth: Wukong",
+      "network": "gmg",
+      "platform": "PlayStation 5",
+      "tags": [
+        "popular",
+        "new-release",
+        "weekly"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/black-myth-wukong-pc/",
+      "note": "The 2024 action blockbuster. High demand keeps pricing firm; watch for seasonal drops.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/black-myth-wukong.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/black-myth-wukong"
+    },
+    {
+      "id": "call-of-duty-modern-warfare",
+      "title": "CALL OF DUTY®: MODERN WARFARE",
+      "network": "gmg",
+      "platform": "Xbox",
+      "tags": [
+        "popular",
+        "weekly"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/call-of-duty-modern-warfare-standard-edition-xbox/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/call-of-duty-modern-warfare.jpg"
+    },
+    {
+      "id": "cyberpunk-2077",
+      "title": "Cyberpunk 2077",
+      "network": "gmg",
+      "platform": "Xbox",
+      "tags": [
+        "popular",
+        "longtail",
+        "weekly"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/cyberpunk-2077-xbox/",
+      "note": "The 'Ultimate Edition' bundles the acclaimed Phantom Liberty. Deep, steady discounts.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/cyberpunk-2077.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/cyberpunk-2077"
+    },
+    {
+      "id": "demon-slayer-kimetsu-no-yaiba",
+      "title": "Demon Slayer -Kimetsu no Yaiba",
+      "network": "gmg",
+      "platform": "",
+      "tags": [
+        "longtail"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-2-deluxe-edition-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/demon-slayer-kimetsu-no-yaiba.jpg"
+    },
+    {
+      "id": "elden-ring",
+      "title": "Elden Ring",
+      "network": "gmg",
+      "platform": "Cross-platform",
+      "tags": [
+        "popular",
+        "weekly"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/elden-ring-pc/",
+      "note": "FromSoftware's open-world epic. Key stores undercut physical; DLC 'Shadow of the Erdtree' sold separately.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/elden-ring.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/elden-ring"
+    },
+    {
+      "id": "final-fantasy-vii-rebirth",
+      "title": "Final Fantasy VII Rebirth",
+      "network": "gmg",
+      "platform": "PlayStation 5",
+      "tags": [
+        "new-release",
+        "weekly"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/final-fantasy-vii-rebirth-pc/",
+      "note": "The middle chapter of the FFVII remake. New release — first real discounts land months in.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/final-fantasy-vii-rebirth.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/final-fantasy-vii-rebirth"
+    },
+    {
+      "id": "final-fantasy-xvi",
+      "title": "Final Fantasy XVI",
+      "network": "gmg",
+      "platform": "PlayStation 5",
+      "tags": [
+        "popular",
+        "longtail"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/final-fantasy-xvi-pc/",
+      "note": "Square's action-Fantasy epic. Steady key-store discounts post-launch.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/final-fantasy-xvi.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/final-fantasy-xvi"
+    },
+    {
+      "id": "star-fire-eternal-cycle",
+      "title": "Star Fire: Eternal Cycle",
+      "network": "gmg",
+      "platform": "steam",
+      "tags": [],
+      "storeUrl": "https://www.greenmangaming.com/games/star-fire-eternal-cycle-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/star-fire-eternal-cycle.jpg"
+    },
+    {
+      "id": "forza-horizon-5",
+      "title": "Forza Horizon 5",
+      "network": "gmg",
+      "platform": "Xbox",
+      "tags": [
+        "popular",
+        "weekly"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/forza-horizon-5-xbox/",
+      "note": "The墨西哥 open-world racer. Xbox digital codes on GMG routinely beat the MS Store.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/forza-horizon-5.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/forza-horizon-5"
+    },
+    {
+      "id": "metal-gear-solid-v-the-definitive-experience",
+      "title": "Metal Gear Solid V: The Definitive Experience",
+      "network": "gmg",
+      "platform": "steam",
+      "tags": [],
+      "storeUrl": "https://www.greenmangaming.com/games/metal-gear-solid-v-the-definitive-experience/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/metal-gear-solid-v-the-definitive-experience.jpg"
+    },
+    {
+      "id": "ghost-of-tsushima",
+      "title": "Ghost of Tsushima",
+      "network": "gmg",
+      "platform": "PlayStation 5",
+      "tags": [
+        "popular",
+        "longtail"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/ghost-of-tsushima-directors-cut-pc/",
+      "note": "Sucker Punch's samurai epic. Director's Cut on PS5 sees regular key-store cuts.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/ghost-of-tsushima.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/ghost-of-tsushima"
+    },
+    {
+      "id": "god-of-war-ragnar-k",
+      "title": "God of War Ragnarök",
+      "network": "gmg",
+      "platform": "PlayStation 5",
+      "tags": [
+        "popular",
+        "weekly"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/god-of-war-ragnarok-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/god-of-war-ragnar-k.jpg"
+    },
+    {
+      "id": "witchspire",
+      "title": "Witchspire",
+      "network": "gmg",
+      "platform": "",
+      "tags": [],
+      "storeUrl": "https://www.greenmangaming.com/games/witchspire-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/witchspire.jpg"
+    },
+    {
+      "id": "grand-theft-auto-v-enhanced-great-white-shark-card-bundle",
+      "title": "Grand Theft Auto V Enhanced & Great White Shark Card Bundle",
+      "network": "gmg",
+      "platform": "",
+      "tags": [],
+      "storeUrl": "https://www.greenmangaming.com/games/grand-theft-auto-v-enhanced-great-white-shark-card-bundle-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/grand-theft-auto-v-enhanced-great-white-shark-card-bundle.jpg"
+    },
+    {
+      "id": "halo-infinite",
+      "title": "Halo Infinite",
+      "network": "gmg",
+      "platform": "Xbox",
+      "tags": [
+        "popular",
+        "longtail"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/search?query=Halo%20Infinite",
+      "note": "343's flagship shooter. Campaign + multiplayer; deep key-store discounts.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "search",
+      "image": "/covers/halo-infinite.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/halo-infinite"
+    },
+    {
+      "id": "helldivers-2",
+      "title": "Helldivers 2",
+      "network": "gmg",
+      "platform": "PlayStation 5",
+      "tags": [
+        "popular",
+        "new-release",
+        "weekly"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/helldivers-2-pc/",
+      "note": "The surprise 2024 co-op hit. Demand-driven pricing; key stores occasionally undercut.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/helldivers-2.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/helldivers-2"
+    },
+    {
+      "id": "lego-batman-legacy-of-the-dark-knight",
+      "title": "LEGO® Batman™: Legacy of the Dark Knight",
+      "network": "gmg",
+      "platform": "",
+      "tags": [],
+      "storeUrl": "https://www.greenmangaming.com/games/lego-batman-legacy-of-the-dark-knight-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/lego-batman-legacy-of-the-dark-knight.jpg"
+    },
+    {
+      "id": "horizon-forbidden-west",
+      "title": "Horizon Forbidden West",
+      "network": "gmg",
+      "platform": "PlayStation 5",
+      "tags": [
+        "popular",
+        "weekly"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/horizon-forbidden-west-complete-edition-pc/",
+      "note": "Guerrilla's open-world sequel. PSN digital codes on GMG undercut the store.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/horizon-forbidden-west.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/horizon-forbidden-west"
+    },
+    {
+      "id": "he-adventures-of-elliot-the-millennium-tales",
+      "title": "he Adventures of Elliot: The Millennium Tales",
+      "network": "gmg",
+      "platform": "Nintendo Switch",
+      "tags": [
+        "longtail"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/the-adventures-of-elliot-the-millennium-tales-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/he-adventures-of-elliot-the-millennium-tales.jpg"
+    },
+    {
+      "id": "indiana-jones-and-the-great-circle",
+      "title": "Indiana Jones and the Great Circle",
+      "network": "gmg",
+      "platform": "Xbox",
+      "tags": [
+        "new-release"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/indiana-jones-and-the-great-circle-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/indiana-jones-and-the-great-circle.jpg"
+    },
+    {
+      "id": "kingdom-come-deliverance-ii",
+      "title": "Kingdom Come: Deliverance II",
+      "network": "gmg",
+      "platform": "Cross-platform",
+      "tags": [
+        "new-release"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/kingdom-come-deliverance-ii-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/kingdom-come-deliverance-ii.jpg"
+    },
+    {
+      "id": "marvel-t-kon-fighting-souls-ultimate-edition",
+      "title": "MARVEL Tōkon: Fighting Souls Ultimate Edition",
+      "network": "gmg",
+      "platform": "",
+      "tags": [],
+      "storeUrl": "https://www.greenmangaming.com/games/marvel-tokon-fighting-souls-ultimate-edition-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/marvel-t-kon-fighting-souls-ultimate-edition.jpg"
+    },
+    {
+      "id": "destiny-2-renegades",
+      "title": "Destiny 2: Renegades",
+      "network": "gmg",
+      "platform": "",
+      "tags": [],
+      "storeUrl": "https://www.greenmangaming.com/games/destiny-2-renegades-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/destiny-2-renegades.jpg"
+    },
+    {
+      "id": "destiny-2-the-collection",
+      "title": "Destiny 2: The Collection",
+      "network": "gmg",
+      "platform": "",
+      "tags": [],
+      "storeUrl": "https://www.greenmangaming.com/games/destiny-2-the-collection-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/destiny-2-the-collection.jpg"
+    },
+    {
+      "id": "marvels-spider-man-2",
+      "title": "Marvel's Spider-Man 2",
+      "network": "gmg",
+      "platform": "",
+      "tags": [],
+      "storeUrl": "https://www.greenmangaming.com/games/marvels-spider-man-2-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/marvels-spider-man-2.jpg"
+    },
+    {
+      "id": "marvels-spider-man-miles-morales",
+      "title": "Marvel's Spider-Man: Miles Morales",
+      "network": "gmg",
+      "platform": "PlayStation 5",
+      "tags": [
+        "longtail"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/marvels-spider-man-miles-morales-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/marvels-spider-man-miles-morales.jpg"
+    },
+    {
+      "id": "destiny-2-the-edge-of-fate",
+      "title": "Destiny 2: The Edge of Fate",
+      "network": "gmg",
+      "platform": "",
+      "tags": [],
+      "storeUrl": "https://www.greenmangaming.com/games/destiny-2-the-edge-of-fate-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/destiny-2-the-edge-of-fate.jpg"
+    },
+    {
+      "id": "monster-hunter-wilds",
+      "title": "Monster Hunter Wilds",
+      "network": "gmg",
+      "platform": "Cross-platform",
+      "tags": [
+        "new-release",
+        "weekly"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/monster-hunter-wilds-pc/",
+      "note": "Capcom's 2025 hunting epic. New release — first real cuts appear ahead of seasonal events.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/monster-hunter-wilds.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/monster-hunter-wilds"
+    },
+    {
+      "id": "007-first-light",
+      "title": "007 First Light",
+      "network": "gmg",
+      "platform": "",
+      "tags": [],
+      "storeUrl": "https://www.greenmangaming.com/games/007-first-light-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/007-first-light.jpg"
+    },
+    {
+      "id": "ratchet-clank-rift-apart",
+      "title": "Ratchet & Clank: Rift Apart",
+      "network": "gmg",
+      "platform": "PlayStation 5",
+      "tags": [
+        "popular",
+        "longtail"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/search?query=Ratchet%20Clank%20Rift%20Apart",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "search",
+      "image": "/covers/ratchet-clank-rift-apart.jpg"
+    },
+    {
+      "id": "red-dead-redemption-2",
+      "title": "Red Dead Redemption 2",
+      "network": "gmg",
+      "platform": "Cross-platform",
+      "tags": [
+        "popular",
+        "longtail",
+        "weekly"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/red-dead-redemption-2-pc/",
+      "note": "Rockstar's western masterpiece. Six years on, it sits at its lowest-ever key price.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/red-dead-redemption-2.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/red-dead-redemption-2"
+    },
+    {
+      "id": "returnal",
+      "title": "Returnal",
+      "network": "gmg",
+      "platform": "PlayStation 5",
+      "tags": [
+        "longtail"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/returnal-pc/",
+      "note": "Housemarque's roguelike shooter. Deep cuts appear well after launch.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/returnal.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/returnal"
+    },
+    {
+      "id": "rise-of-the-ronin",
+      "title": "Rise of the Ronin",
+      "network": "gmg",
+      "platform": "PlayStation 5",
+      "tags": [
+        "new-release"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/rise-of-the-ronin-pc/",
+      "note": "Team Ninja's open-world action RPG. 2024 release with deepening key-store discounts.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/rise-of-the-ronin.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/rise-of-the-ronin"
+    },
+    {
+      "id": "sea-of-thieves-castaways-ancient-coin-pack-550-coins",
+      "title": "Sea of Thieves Castaway’s Ancient Coin Pack – 550 Coins",
+      "network": "gmg",
+      "platform": "Xbox",
+      "tags": [
+        "longtail"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/sea-of-thieves-castaways-ancient-coin-pack-550-coins-xbox/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/sea-of-thieves-castaways-ancient-coin-pack-550-coins.jpg"
+    },
+    {
+      "id": "silent-hill-townfall",
+      "title": "SILENT HILL: Townfall",
+      "network": "gmg",
+      "platform": "",
+      "tags": [],
+      "storeUrl": "https://www.greenmangaming.com/games/silent-hill-townfall-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/silent-hill-townfall.jpg"
+    },
+    {
+      "id": "sovereign-tower",
+      "title": "Sovereign Tower",
+      "network": "gmg",
+      "platform": "",
+      "tags": [],
+      "storeUrl": "https://www.greenmangaming.com/games/sovereign-tower-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/sovereign-tower.jpg"
+    },
+    {
+      "id": "star-wars-outlaws-gold-edition",
+      "title": "STAR WARS: OUTLAWS – Gold Edition",
+      "network": "gmg",
+      "platform": "Cross-platform",
+      "tags": [
+        "new-release"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/star-wars-outlaws-gold-edition-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/star-wars-outlaws-gold-edition.jpg"
+    },
+    {
+      "id": "starfield",
+      "title": "Starfield",
+      "network": "gmg",
+      "platform": "Xbox",
+      "tags": [
+        "new-release",
+        "longtail"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/starfield-pc/",
+      "note": "Bethesda's space RPG. 2023 launch; key stores now sit well below launch price.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/starfield.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/starfield"
+    },
+    {
+      "id": "stellar-blade",
+      "title": "Stellar Blade",
+      "network": "gmg",
+      "platform": "PlayStation 5",
+      "tags": [
+        "new-release"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/stellar-blade-pc/",
+      "note": "Shift Up's stylish action game. 2024 release; first real cuts appear months in.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/stellar-blade.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/stellar-blade"
+    },
+    {
+      "id": "the-last-of-us-part-ii-remastered",
+      "title": "The Last of Us Part II Remastered",
+      "network": "gmg",
+      "platform": "PlayStation 5",
+      "tags": [
+        "popular",
+        "longtail"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/the-last-of-us-part-ii-remastered-pc/",
+      "note": "The remastered PS5 edition. Steady discounts track the HBO show's seasons.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/the-last-of-us-part-ii-remastered.jpg",
+      "productUrl": "https://www.greenmangaming.com/games/the-last-of-us-part-ii-remastered"
+    },
+    {
+      "id": "disney-dreamlight-valley",
+      "title": "Disney Dreamlight Valley",
+      "network": "gmg",
+      "platform": "Nintendo Switch",
+      "tags": [
+        "longtail"
+      ],
+      "storeUrl": "https://www.greenmangaming.com/games/disney-dreamlight-valley-pc/",
+      "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/disney-dreamlight-valley.jpg"
+    },
+    {
+      "id": "baldurs-gate-ii-enhanced-edition",
+      "title": "Baldur's Gate II: Enhanced Edition",
+      "network": "humble",
+      "platform": "Cross-platform",
+      "tags": [
+        "popular",
+        "weekly"
+      ],
+      "storeUrl": "https://www.humblebundle.com/store/baldurs-gate-ii-enhanced-edition?hmb_source=search_bar",
+      "note": "Compare editions and current price on Humble Bundle. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "search",
+      "image": "/covers/baldurs-gate-ii-enhanced-edition.avif"
+    },
+    {
+      "id": "ea-sports-fc-25",
+      "title": "EA Sports FC 25",
+      "network": "humble",
+      "platform": "Cross-platform",
+      "tags": [
+        "popular",
+        "weekly"
+      ],
+      "storeUrl": "https://www.humblebundle.com/store/ea-sports-fc-25-ultimate-edition-switch?hmb_source=search_bar",
+      "note": "Humble's digital store runs frequent promos; previous FC entries hit half-price within months.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "search",
+      "image": "/covers/ea-sports-fc-25.avif",
+      "productUrl": "https://www.humblebundle.com/store/ea-sports-fc-25"
+    },
+    {
+      "id": "dying-light-2-stay-human-reloaded-edition",
+      "title": "Dying Light 2 Stay Human: Reloaded Edition",
+      "network": "fanatical",
+      "platform": "Cross-platform",
+      "tags": [
+        "longtail"
+      ],
+      "storeUrl": "https://www.fanatical.com/en/game/dying-light-2-stay-human",
+      "note": "Compare editions and current price on Fanatical. Stock and regional pricing vary — verify on the store before buying.",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
+      "image": "/covers/dying-light-2-stay-human-reloaded-edition.avif"
+    },
+    {
+      "id": "hogwarts-legacy",
+      "title": "Hogwarts Legacy",
+      "network": "fanatical",
+      "platform": "Cross-platform",
+      "tags": [
+        "popular",
+        "weekly"
+      ],
+      "storeUrl": "https://www.fanatical.com/en/game/hogwarts-legacy",
+      "note": "Fanatical clears older hits hard — often 50%+ off during site-wide events.",
+      "lastChecked": "2026-08-05",
+      "urlStatus": "verified",
+      "image": "/covers/hogwarts-legacy.avif",
+      "productUrl": "https://www.fanatical.com/en/game/hogwarts-legacy"
     }
   ]
 }
