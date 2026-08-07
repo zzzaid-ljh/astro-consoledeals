@@ -53,13 +53,17 @@ export interface AffiliateConfig {
 
 export const affiliates: Record<Network, AffiliateConfig> = {
   // ── Amazon Associates ────────────────────────────────────────────────
-  // 标准做法：在商品 URL 后追加 ?tag=YOURTAG-20
+  // 标准做法：在商品 URL 后追加 ?tag=YOURTAG-20。
+  // 但若链接本身是 amzn.to 官方短链（已内嵌你的追踪 ID）或已带 tag 参数，
+  // 则原样透传，避免双重 tag / 短链失效。
   amazon: {
     label: "Amazon",
-    enabled: false,
+    enabled: true,
     build: (targetUrl) => {
       try {
         const u = new URL(targetUrl);
+        if (u.hostname.endsWith("amzn.to")) return targetUrl; // 官方短链，已带追踪
+        if (u.searchParams.has("tag")) return targetUrl; // 已含 tag，透传
         u.searchParams.set("tag", AMAZON_TAG);
         return u.toString();
       } catch {

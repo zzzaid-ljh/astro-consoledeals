@@ -7,7 +7,7 @@
       "title": "Mario Kart 8 Deluxe",
       "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B01N1037CV",
+      "storeUrl": "https://amzn.to/3RRsVdI",
       "productUrl": "https://www.amazon.com/dp/B01N1037CV",
       "urlStatus": "verified",
       "note": "Nintendo first-party rarely dips below MSRP. Best discounts show up in eShop seasonal sales and bundle offers.",
@@ -15,14 +15,15 @@
       "tags": [
         "popular",
         "weekly"
-      ]
+      ],
+      "image": "/covers/mario-kart-8-deluxe.jpg"
     },
     {
       "id": "zelda-tears-of-the-kingdom",
       "title": "The Legend of Zelda: Tears of the Kingdom",
       "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B097B2YWFX",
+      "storeUrl": "https://amzn.to/4xrrkud",
       "productUrl": "https://www.amazon.com/dp/B097B2YWFX",
       "urlStatus": "verified",
       "note": "A 2023 GOTY contender. Digital editions occasionally drop during Nintendo eShop holiday sales.",
@@ -30,14 +31,15 @@
       "tags": [
         "popular",
         "weekly"
-      ]
+      ],
+      "image": "/covers/zelda-tears-of-the-kingdom.jpg"
     },
     {
       "id": "super-mario-bros-wonder",
       "title": "Super Mario Bros. Wonder",
       "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B0C8VHZR14",
+      "storeUrl": "https://amzn.to/45Plnv6",
       "productUrl": "https://www.amazon.com/dp/B0C8VHZR14",
       "urlStatus": "verified",
       "note": "The definitive 2D Mario. Full price most of the year; watch for holiday and Black Friday dips.",
@@ -45,14 +47,15 @@
       "tags": [
         "popular",
         "weekly"
-      ]
+      ],
+      "image": "/covers/super-mario-bros-wonder.jpg"
     },
     {
       "id": "animal-crossing-new-horizons",
       "title": "Animal Crossing: New Horizons",
       "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B07SR1BRN5",
+      "storeUrl": "https://amzn.to/4wNJW7Q",
       "productUrl": "https://www.amazon.com/dp/B07SR1BRN5",
       "urlStatus": "verified",
       "note": "The cozy-life sim evergreen. Often bundled with consoles; standalone dips appear in big seasonal sales.",
@@ -60,14 +63,15 @@
       "tags": [
         "popular",
         "longtail"
-      ]
+      ],
+      "image": "/covers/animal-crossing-new-horizons.jpg"
     },
     {
       "id": "super-mario-odyssey",
       "title": "Super Mario Odyssey",
       "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B01MY7GHKJ",
+      "storeUrl": "https://amzn.to/45QLG45",
       "productUrl": "https://www.amazon.com/dp/B01MY7GHKJ",
       "urlStatus": "verified",
       "note": "Still the best 3D Mario. Frequently discounted in Nintendo's budget 'Selects' range.",
@@ -75,14 +79,15 @@
       "tags": [
         "popular",
         "longtail"
-      ]
+      ],
+      "image": "/covers/super-mario-odyssey.jpg"
     },
     {
       "id": "pokemon-scarlet-violet",
       "title": "Pokémon Scarlet & Violet",
       "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B0B324SSTJ",
+      "storeUrl": "https://amzn.to/4q4oucf",
       "productUrl": "https://www.amazon.com/dp/B0B324SSTJ",
       "urlStatus": "verified",
       "note": "The open-world Pokémon duo. Dual-pack and eShop sales appear a few times a year.",
@@ -90,14 +95,15 @@
       "tags": [
         "popular",
         "weekly"
-      ]
+      ],
+      "image": "/covers/pokemon-scarlet-violet.jpg"
     },
     {
       "id": "mario-kart-world",
       "title": "Mario Kart World",
       "platform": "Nintendo Switch 2",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B0FDMVPVW9",
+      "storeUrl": "https://amzn.to/4pZh1et",
       "productUrl": "https://www.amazon.com/dp/B0FDMVPVW9",
       "urlStatus": "verified",
       "note": "The Switch 2 launch racer. New entry, so expect list price; bundle-with-console deals are the first to appear.",
@@ -105,42 +111,45 @@
       "tags": [
         "popular",
         "new-release"
-      ]
+      ],
+      "image": "/covers/mario-kart-world.jpg"
     },
     {
       "id": "donkey-kong-bananza",
       "title": "Donkey Kong Bananza",
       "platform": "Nintendo Switch 2",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B0F66KLYVH",
+      "storeUrl": "https://amzn.to/4q2cHLd",
       "productUrl": "https://www.amazon.com/dp/B0F66KLYVH",
       "urlStatus": "verified",
       "note": "A fresh 3D platformer exclusive to Switch 2. New release — watch for holiday bundles later in the year.",
       "lastChecked": "2026-08-05",
       "tags": [
         "new-release"
-      ]
+      ],
+      "image": "/covers/donkey-kong-bananza.jpg"
     },
     {
       "id": "metroid-prime-4-beyond",
       "title": "Metroid Prime 4: Beyond",
       "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B0FQXR2NPH",
+      "storeUrl": "https://amzn.to/4fRrp33",
       "productUrl": "https://www.amazon.com/dp/B0FQXR2NPH",
       "urlStatus": "verified",
       "note": "The long-awaited return of Samus. Pre-orders and launch-week stock are the first buying windows.",
       "lastChecked": "2026-08-05",
       "tags": [
         "new-release"
-      ]
+      ],
+      "image": "/covers/metroid-prime-4-beyond.jpg"
     },
     {
       "id": "zelda-breath-of-the-wild",
       "title": "The Legend of Zelda: Breath of the Wild",
       "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B01MS6MO77",
+      "storeUrl": "https://amzn.to/4fUg8zb",
       "productUrl": "https://www.amazon.com/dp/B01MS6MO77",
       "urlStatus": "verified",
       "note": "The open-world classic. Continuously discounted in Nintendo Selects; a safe cheap pickup.",
@@ -148,7 +157,8 @@
       "tags": [
         "popular",
         "longtail"
-      ]
+      ],
+      "image": "/covers/zelda-breath-of-the-wild.jpg"
     },
     {
       "id": "luigis-mansion-3",
@@ -169,7 +179,7 @@
       "title": "Super Smash Bros. Ultimate",
       "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B07BHGGHX1",
+      "storeUrl": "https://amzn.to/4xqwYwK",
       "productUrl": "https://www.amazon.com/dp/B07BHGGHX1",
       "urlStatus": "verified",
       "note": "The ultimate party fighter. Staple gift title; dips show up every major sale period.",
@@ -177,7 +187,8 @@
       "tags": [
         "popular",
         "longtail"
-      ]
+      ],
+      "image": "/covers/super-smash-bros-ultimate.jpg"
     },
     {
       "id": "splatoon-3",
@@ -269,28 +280,30 @@
       "title": "Mario Party Superstars",
       "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B097B2HQ5R",
+      "storeUrl": "https://amzn.to/4hjNmdI",
       "productUrl": "https://www.amazon.com/dp/B097B2HQ5R",
       "urlStatus": "verified",
       "note": "The go-to local multiplayer party game. Bundle and holiday dips are common.",
       "lastChecked": "2026-08-05",
       "tags": [
         "longtail"
-      ]
+      ],
+      "image": "/covers/mario-party-superstars.jpg"
     },
     {
       "id": "pokemon-legends-arceus",
       "title": "Pokémon Legends: Arceus",
       "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B0914YGQSH",
+      "storeUrl": "https://amzn.to/4wUHyft",
       "productUrl": "https://www.amazon.com/dp/B0914YGQSH",
       "urlStatus": "verified",
       "note": "The open-world Pokémon prequel. Well past launch — steady Selects-range pricing.",
       "lastChecked": "2026-08-05",
       "tags": [
         "longtail"
-      ]
+      ],
+      "image": "/covers/pokemon-legends-arceus.jpg"
     },
     {
       "id": "hyrule-warriors-age-of-calamity",
@@ -311,28 +324,30 @@
       "title": "Nintendo Switch Sports",
       "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B09KRK6C82",
+      "storeUrl": "https://amzn.to/4bxrRCl",
       "productUrl": "https://www.amazon.com/dp/B09KRK6C82",
       "urlStatus": "verified",
       "note": "Family-friendly motion sports. Often bundled with the Switch Lite or OLED.",
       "lastChecked": "2026-08-05",
       "tags": [
         "longtail"
-      ]
+      ],
+      "image": "/covers/nintendo-switch-sports.jpg"
     },
     {
       "id": "ring-fit-adventure",
       "title": "Ring Fit Adventure",
       "platform": "Nintendo Switch",
       "network": "amazon",
-      "storeUrl": "https://www.amazon.com/dp/B07XV4NHHN",
+      "storeUrl": "https://amzn.to/4z1cmfZ",
       "productUrl": "https://www.amazon.com/dp/B07XV4NHHN",
       "urlStatus": "verified",
       "note": "Fitness-RPG hybrid. Supply-driven pricing; watch for restocks and sale events.",
       "lastChecked": "2026-08-05",
       "tags": [
         "longtail"
-      ]
+      ],
+      "image": "/covers/ring-fit-adventure.jpg"
     },
     {
       "id": "mario-rabbids-sparks-of-hope",
