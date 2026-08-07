@@ -1,0 +1,73 @@
+---
+/**
+ * PriceBlock —— 价格行（MSRP / 现价 / Save% 徽章）。
+ * 首页卡片与游戏详情页共用，避免逻辑重复。
+ */
+import type { Network } from "../config";
+
+interface Deal {
+  network: Network;
+  price?: number;
+  originalPrice?: number;
+}
+
+const { deal } = Astro.props as { deal: Deal };
+const isAmazon = deal.network === "amazon";
+const cur = deal.price ?? undefined;
+const orig = deal.originalPrice;
+const showPrice = cur !== undefined || orig !== undefined;
+const savingsPct =
+  !isAmazon && cur !== undefined && orig !== undefined && cur < orig
+    ? Math.round((1 - cur / orig) * 100)
+    : null;
+const priceMain = isAmazon
+  ? orig !== undefined
+    ? `List: $${orig.toFixed(2)}`
+    : ""
+  : cur !== undefined
+    ? `$${cur.toFixed(2)}`
+    : orig !== undefined
+      ? `MSRP $${orig.toFixed(2)}`
+      : "";
+---
+
+{
+  showPrice && (
+    <div class="price-row">
+      <span class="price">{priceMain}</span>
+      {!isAmazon && cur !== undefined && orig !== undefined && orig !== cur && (
+        <span class="regular">${orig.toFixed(2)}</span>
+      )}
+      {savingsPct !== null && <span class="savings">Save {savingsPct}%</span>}
+    </div>
+  )
+}
+
+<style>
+  .price-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.3rem 0;
+  }
+  .price {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .regular {
+    color: var(--muted);
+    text-decoration: line-through;
+    font-size: 0.8rem;
+  }
+  .savings {
+    color: #e07b00;
+    font-weight: 700;
+    font-size: 0.72rem;
+    background: #fff3e0;
+    padding: 0.1rem 0.4rem;
+    border-radius: 999px;
+  }
+</style>

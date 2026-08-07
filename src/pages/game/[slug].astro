@@ -1,0 +1,172 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AffiliateLink from "../../components/AffiliateLink.astro";
+import PriceBlock from "../../components/PriceBlock.astro";
+import { STATIC_GAME_PAGES, networkLabel } from "../../config";
+import dealsData from "../../data/deals.json";
+
+export function getStaticPaths() {
+  const allDeals = dealsData.deals;
+  return allDeals
+    .filter((d) => !STATIC_GAME_PAGES[d.id])
+    .map((d) => ({ params: { slug: d.id }, props: { deal: d } }));
+}
+
+const { deal } = Astro.props;
+const storeName = networkLabel(deal.network);
+const isAmazon = deal.network === "amazon";
+const metaDesc = (deal.description || "").slice(0, 155);
+const cur = deal.price ?? undefined;
+const orig = deal.originalPrice;
+
+// 结构化数据：Product + Offer（E-E-A-T / 富媒体摘要）
+const offerPrice = cur !== undefined ? cur : orig;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  name: deal.title,
+  description: deal.description,
+  gamePlatform: deal.platform || "Multiple platforms",
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "USD",
+    url: deal.storeUrl,
+    availability: "https://schema.org/InStock",
+    ...(offerPrice !== undefined ? { price: offerPrice } : {}),
+  },
+};
+---
+
+<BaseLayout
+  title={`${deal.title} — Deals, Price & Is It Worth It?`}
+  description={metaDesc}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+
+  <article class="post game-detail">
+    <h1>{deal.title}</h1>
+    <p class="meta">{deal.platform || "Cross-platform"} · Price checked {deal.lastChecked}</p>
+
+    <p class="lede">{deal.description}</p>
+
+    <h2>Highlights</h2>
+    <ul class="highlights">
+      {deal.highlights?.map((h) => <li>{h}</li>)}
+    </ul>
+
+    <div class="buy-box">
+      <PriceBlock deal={deal} />
+      <AffiliateLink
+        network={deal.network}
+        href={deal.storeUrl}
+        cta={isAmazon ? "Check price on Amazon" : `Buy on ${storeName}`}
+      />
+      <p class="checked">
+        {
+          isAmazon
+            ? "Price varies on Amazon — tap to see the current deal."
+            : `Price last checked ${deal.lastChecked}. Verify on the store before buying.`
+        }
+      </p>
+    </div>
+
+    <h2>Is {deal.title} worth it at this price?</h2>
+    <p>
+      {deal.title} earns its spot on our deal radar because the current {
+        storeName
+      } price undercuts the usual {
+        orig !== undefined ? `$${orig.toFixed(2)} list` : "list"
+      } for this title. If you have been waiting to play it, a key-store code is
+      typically the cheapest legitimate way in — just confirm the edition matches
+      what you want before checkout.
+    </p>
+
+    <h2>Which edition should I pick?</h2>
+    <p>
+      For most players the standard edition is enough. Only step up to a deluxe or
+      season-pass bundle if you know you will want the post-launch content — otherwise
+      you pay upfront for extras you may never touch. We link the exact store page above
+      so you can compare editions side by side.
+    </p>
+
+    <h2>FAQ</h2>
+    <dl class="faq">
+      <dt>What platforms is {deal.title} available on?</dt>
+      <dd>{deal.platform || "Multiple platforms"} — check the store page for the exact SKU.</dd>
+      <dt>Where is the cheapest place to buy {deal.title}?</dt>
+      <dd>
+        We track key stores daily. Tap the button above to check the live {storeName}{" "}
+        price and compare it against the list price shown.
+      </dd>
+      <dt>Is the key/code legitimate?</dt>
+      <dd>
+        Yes — the links go to authorized retailers (Amazon, Green Man Gaming, Humble
+        Bundle, Fanatical). You receive a official code, not a shared account.
+      </dd>
+    </dl>
+
+    <h2>Our take</h2>
+    <p class="editorial">
+      We track {deal.title} because it is a title our readers actually search for, and
+      we update its price whenever the store moves. ConsoleDeals earns a commission if
+      you buy through our link, at no extra cost to you — that is what keeps this
+      comparison free. Always confirm the price on the retailer's page, since deals
+      change fast.
+    </p>
+
+    <p class="back"><a href="/">← Back to all console deals</a></p>
+  </article>
+</BaseLayout>
+
+<style>
+  .game-detail {
+    max-width: 760px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: -0.5rem;
+  }
+  .lede {
+    font-size: 1.02rem;
+    line-height: 1.6;
+  }
+  .highlights {
+    padding-left: 1.2rem;
+    line-height: 1.7;
+  }
+  .highlights li {
+    margin-bottom: 0.35rem;
+  }
+  .buy-box {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem;
+    background: #f7faf8;
+    text-align: center;
+    margin: 1.25rem 0;
+  }
+  .checked {
+    color: var(--muted);
+    font-size: 0.72rem;
+    margin: 0.6rem 0 0;
+  }
+  .faq dt {
+    font-weight: 700;
+    margin-top: 0.9rem;
+  }
+  .faq dd {
+    margin: 0.25rem 0 0;
+    color: var(--text);
+  }
+  .editorial {
+    background: #f0f7f3;
+    border-left: 3px solid var(--accent);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 0.92rem;
+  }
+  .back {
+    margin-top: 2rem;
+  }
+</style>

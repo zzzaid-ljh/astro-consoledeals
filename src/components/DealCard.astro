@@ -4,6 +4,8 @@
  * 数据来自 src/data/deals.json，渲染时统一走 AffiliateLink 拼接追踪链接。
  */
 import AffiliateLink from "./AffiliateLink.astro";
+import PriceBlock from "./PriceBlock.astro";
+import { gamePagePath } from "../config";
 import type { Network } from "../config";
 
 interface Deal {
@@ -16,6 +18,7 @@ interface Deal {
   lastChecked: string;
   tags?: string[];
   image?: string;
+  description?: string;
   price?: number;
   originalPrice?: number;
 }
@@ -31,44 +34,24 @@ const storeName =
         : "Fanatical";
 const cover = deal.image ? deal.image : `/covers/${deal.id}.svg`;
 const tags = (deal.tags || []).join(" ");
-
 const isAmazon = deal.network === "amazon";
-const cur = deal.price ?? undefined;
-const orig = deal.originalPrice;
-const showPrice = cur !== undefined || orig !== undefined;
-// 亚马逊不展示具体抓取价：只给 MSRP 作参考价，并提示去官网查实时价
-const savingsPct =
-  !isAmazon && cur !== undefined && orig !== undefined && cur < orig
-    ? Math.round((1 - cur / orig) * 100)
-    : null;
-const priceMain = isAmazon
-  ? orig !== undefined
-    ? `List: $${orig.toFixed(2)}`
-    : ""
-  : cur !== undefined
-    ? `$${cur.toFixed(2)}`
-    : orig !== undefined
-      ? `MSRP $${orig.toFixed(2)}`
-      : "";
+const detailUrl = gamePagePath(deal.id);
+const desc =
+  deal.description ||
+  deal.note ||
+  "Check the store for the latest price and edition details.";
 ---
 
 <article class="deal-card" data-title={deal.title} data-platform={deal.platform} data-tags={tags}>
-  <img class="cover" src={cover} alt={deal.title} width="140" height="187" loading="lazy" />
+  <a class="cover-link" href={detailUrl} aria-label={deal.title}>
+    <img class="cover" src={cover} alt={deal.title} width="140" height="187" loading="lazy" />
+  </a>
   <div class="deal-head">
-    <h3>{deal.title}</h3>
+    <a class="title-link" href={detailUrl}><h3>{deal.title}</h3></a>
     <span class="platform">{deal.platform}</span>
   </div>
-  {
-    showPrice && (
-      <div class="price-row">
-        <span class="price">{priceMain}</span>
-        {!isAmazon && cur !== undefined && orig !== undefined && orig !== cur && (
-          <span class="regular">${orig.toFixed(2)}</span>
-        )}
-        {savingsPct !== null && <span class="savings">Save {savingsPct}%</span>}
-      </div>
-    )
-  }
+  <p class="desc">{desc}</p>
+  <PriceBlock deal={deal} />
   <p class="note">{deal.note}</p>
   <AffiliateLink
     network={deal.network}
@@ -94,6 +77,14 @@ const priceMain = isAmazon
     text-align: center;
     gap: 0.3rem;
   }
+  .cover-link {
+    display: block;
+    width: 100%;
+    max-width: 140px;
+    margin: 0 auto 0.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
   .cover {
     width: 100%;
     max-width: 140px;
@@ -102,7 +93,10 @@ const priceMain = isAmazon
     border-radius: 8px;
     display: block;
     background: var(--border);
-    margin: 0 auto 0.5rem;
+    transition: transform 0.15s ease;
+  }
+  .cover-link:hover .cover {
+    transform: scale(1.03);
   }
   .deal-head {
     display: flex;
@@ -110,6 +104,13 @@ const priceMain = isAmazon
     align-items: center;
     gap: 0.3rem;
     width: 100%;
+  }
+  .title-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  .title-link:hover h3 {
+    color: #1a73e8;
   }
   .deal-head h3 {
     margin: 0;
@@ -124,35 +125,20 @@ const priceMain = isAmazon
     border-radius: 999px;
     white-space: nowrap;
   }
-  .price-row {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 0.3rem 0;
-  }
-  .price {
-    font-size: 1rem;
-    font-weight: 700;
+  .desc {
     color: var(--text);
-  }
-  .regular {
-    color: var(--muted);
-    text-decoration: line-through;
-    font-size: 0.8rem;
-  }
-  .savings {
-    color: #e07b00;
-    font-weight: 700;
-    font-size: 0.72rem;
-    background: #fff3e0;
-    padding: 0.1rem 0.4rem;
-    border-radius: 999px;
+    font-size: 0.74rem;
+    line-height: 1.45;
+    margin: 0.25rem 0 0.35rem;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .note {
     color: var(--muted);
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     margin: 0.2rem 0 0.6rem;
     line-height: 1.4;
   }

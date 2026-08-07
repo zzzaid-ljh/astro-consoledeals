@@ -110,3 +110,52 @@ export const affiliates: Record<Network, AffiliateConfig> = {
 export function networkLabel(network: Network): string {
   return affiliates[network].label;
 }
+
+// ── 游戏详情页路由 ──────────────────────────────────────────────────────
+// 哪些 deal 已经有手写的 /games/<slug> 详情页（含 deal.id 与 slug 不一致的情况）。
+// 有则卡片标题链到手写页；没有则由动态路由 /game/[slug] 自动生成详情页。
+export const STATIC_GAME_PAGES: Record<string, string> = {
+  // 直接匹配（deal.id === 静态页 slug）
+  "animal-crossing-new-horizons": "animal-crossing-new-horizons",
+  "donkey-kong-bananza": "donkey-kong-bananza",
+  "mario-kart-8-deluxe": "mario-kart-8-deluxe",
+  "mario-kart-world": "mario-kart-world",
+  "metroid-prime-4-beyond": "metroid-prime-4-beyond",
+  "super-mario-bros-wonder": "super-mario-bros-wonder",
+  "super-mario-odyssey": "super-mario-odyssey",
+  "super-smash-bros-ultimate": "super-smash-bros-ultimate",
+  "the-legend-of-zelda-breath-of-the-wild": "the-legend-of-zelda-breath-of-the-wild",
+  "the-legend-of-zelda-tears-of-the-kingdom": "the-legend-of-zelda-tears-of-the-kingdom",
+  "assassins-creed-shadows": "assassins-creed-shadows",
+  "black-myth-wukong": "black-myth-wukong",
+  "cyberpunk-2077": "cyberpunk-2077",
+  "elden-ring": "elden-ring",
+  "final-fantasy-vii-rebirth": "final-fantasy-vii-rebirth",
+  "final-fantasy-xvi": "final-fantasy-xvi",
+  "forza-horizon-5": "forza-horizon-5",
+  "ghost-of-tsushima": "ghost-of-tsushima",
+  "halo-infinite": "halo-infinite",
+  "helldivers-2": "helldivers-2",
+  "horizon-forbidden-west": "horizon-forbidden-west",
+  "kingdom-come-deliverance-ii": "kingdom-come-deliverance-ii",
+  "marvels-spider-man-2": "marvels-spider-man-2",
+  "monster-hunter-wilds": "monster-hunter-wilds",
+  "red-dead-redemption-2": "red-dead-redemption-2",
+  "starfield": "starfield",
+  "stellar-blade": "stellar-blade",
+  "the-last-of-us-part-ii-remastered": "the-last-of-us-part-ii-remastered",
+  "ea-sports-fc-25": "ea-sports-fc-25",
+  "hogwarts-legacy": "hogwarts-legacy",
+  // deal.id 与静态页 slug 不一致
+  "god-of-war-ragnar-k": "god-of-war-ragnarok",
+  "pok-mon-scarlet-38-violet": "pokemon-scarlet-violet",
+  "ratchet-38-clank-rift-apart": "ratchet-and-clank-rift-apart",
+  "star-wars-outlaws-gold-edition": "star-wars-outlaws",
+};
+
+/** 返回某个 deal 的详情页路径（手写页优先，否则动态页） */
+export function gamePagePath(dealId: string): string {
+  const slug = STATIC_GAME_PAGES[dealId];
+  return slug ? `/games/${slug}` : `/game/${dealId}`;
+}
+
