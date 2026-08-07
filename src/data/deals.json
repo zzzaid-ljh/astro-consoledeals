@@ -11,11 +11,12 @@
       ],
       "storeUrl": "https://amzn.to/4wNJW7Q",
       "note": "The cozy-life sim evergreen. Often bundled with consoles; standalone dips appear in big seasonal sales.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/animal-crossing-new-horizons.jpg",
       "productUrl": "https://amzn.to/4wNJW7Q",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "donkey-kong-bananza",
@@ -27,11 +28,12 @@
       ],
       "storeUrl": "https://amzn.to/4q2cHLd",
       "note": "A fresh 3D platformer exclusive to Switch 2. New release — watch for holiday bundles later in the year.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/donkey-kong-bananza.jpg",
       "productUrl": "https://amzn.to/4q2cHLd",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": null
     },
     {
       "id": "mario-kart-8-deluxe",
@@ -44,11 +46,12 @@
       ],
       "storeUrl": "https://amzn.to/3RRsVdI",
       "note": "Nintendo first-party rarely dips below MSRP. Best discounts show up in eShop seasonal sales and bundle offers.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/mario-kart-8-deluxe.jpg",
       "productUrl": "https://amzn.to/3RRsVdI",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "mario-kart-world",
@@ -61,11 +64,12 @@
       ],
       "storeUrl": "https://amzn.to/4pZh1et",
       "note": "The Switch 2 launch racer. New entry, so expect list price; bundle-with-console deals are the first to appear.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/mario-kart-world.jpg",
       "productUrl": "https://amzn.to/4pZh1et",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": null
     },
     {
       "id": "mario-party-superstars",
@@ -77,11 +81,12 @@
       ],
       "storeUrl": "https://amzn.to/4hjNmdI",
       "note": "The go-to local multiplayer party game. Bundle and holiday dips are common.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/mario-party-superstars.jpg",
       "productUrl": "https://amzn.to/4hjNmdI",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "metroid-prime-4-beyond",
@@ -93,11 +98,12 @@
       ],
       "storeUrl": "https://amzn.to/4fRrp33",
       "note": "The long-awaited return of Samus. Pre-orders and launch-week stock are the first buying windows.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/metroid-prime-4-beyond.jpg",
       "productUrl": "https://amzn.to/4fRrp33",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "nintendo-switch-sports",
@@ -109,11 +115,12 @@
       ],
       "storeUrl": "https://amzn.to/4bxrRCl",
       "note": "Family-friendly motion sports. Often bundled with the Switch Lite or OLED.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/nintendo-switch-sports.jpg",
       "productUrl": "https://amzn.to/4bxrRCl",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "pok-mon-legends-arceus",
@@ -129,7 +136,8 @@
       "urlStatus": "verified",
       "image": "/covers/pok-mon-legends-arceus.jpg",
       "productUrl": "https://amzn.to/4wUHyft",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "pok-mon-scarlet-38-violet",
@@ -146,7 +154,8 @@
       "urlStatus": "verified",
       "image": "/covers/pok-mon-scarlet-38-violet.jpg",
       "productUrl": "https://amzn.to/4q4oucf",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "ring-fit-adventure",
@@ -158,11 +167,12 @@
       ],
       "storeUrl": "https://amzn.to/4z1cmfZ",
       "note": "Fitness-RPG hybrid. Supply-driven pricing; watch for restocks and sale events.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/ring-fit-adventure.jpg",
       "productUrl": "https://amzn.to/4z1cmfZ",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "super-mario-bros-wonder",
@@ -175,11 +185,12 @@
       ],
       "storeUrl": "https://amzn.to/45Plnv6",
       "note": "The definitive 2D Mario. Full price most of the year; watch for holiday and Black Friday dips.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/super-mario-bros-wonder.jpg",
       "productUrl": "https://amzn.to/45Plnv6",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "super-mario-odyssey",
@@ -192,11 +203,12 @@
       ],
       "storeUrl": "https://amzn.to/45QLG45",
       "note": "Still the best 3D Mario. Frequently discounted in Nintendo&#39;s budget &#39;Selects&#39; range.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/super-mario-odyssey.jpg",
       "productUrl": "https://amzn.to/45QLG45",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "super-smash-bros-ultimate",
@@ -209,11 +221,12 @@
       ],
       "storeUrl": "https://amzn.to/4xqwYwK",
       "note": "The ultimate party fighter. Staple gift title; dips show up every major sale period.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/super-smash-bros-ultimate.jpg",
       "productUrl": "https://amzn.to/4xqwYwK",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "the-legend-of-zelda-breath-of-the-wild",
@@ -230,7 +243,8 @@
       "urlStatus": "verified",
       "image": "/covers/the-legend-of-zelda-breath-of-the-wild.jpg",
       "productUrl": "https://amzn.to/4fUg8zb",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "the-legend-of-zelda-tears-of-the-kingdom",
@@ -247,7 +261,8 @@
       "urlStatus": "verified",
       "image": "/covers/the-legend-of-zelda-tears-of-the-kingdom.jpg",
       "productUrl": "https://amzn.to/4xrrkud",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "007-first-light",
@@ -261,7 +276,8 @@
       "urlStatus": "verified",
       "image": "/covers/007-first-light.jpg",
       "productUrl": "https://www.greenmangaming.com/games/007-first-light-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 69.99
     },
     {
       "id": "assassins-creed-shadows",
@@ -271,13 +287,14 @@
       "tags": [
         "new-release"
       ],
-      "storeUrl": "https://www.greenmangaming.com/search?query=Assassin%27s%20Creed%20Shadows",
+      "storeUrl": "https://www.greenmangaming.com/games/assassins-creed-shadows-pc/",
       "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
       "lastChecked": "2026-08-07",
-      "urlStatus": "search",
+      "urlStatus": "verified",
       "image": "/covers/assassins-creed-shadows.jpg",
-      "productUrl": "https://www.greenmangaming.com/search?query=Assassin%27s%20Creed%20Shadows",
-      "originalPrice": 59.99
+      "productUrl": "https://www.greenmangaming.com/games/assassins-creed-shadows-pc/",
+      "originalPrice": 59.99,
+      "price": 28.35
     },
     {
       "id": "astor-blade-of-the-monolith",
@@ -293,7 +310,8 @@
       "urlStatus": "verified",
       "image": "/covers/astor-blade-of-the-monolith.jpg",
       "productUrl": "https://www.greenmangaming.com/games/astor-blade-of-the-monolith-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 24.99
     },
     {
       "id": "avatar-frontiers-of-pandora",
@@ -305,11 +323,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/avatar-frontiers-of-pandora-pc/",
       "note": "Massive&#39;s open-world Avatar. Heavily discounted post-launch on key stores.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/avatar-frontiers-of-pandora.jpg",
       "productUrl": "https://www.greenmangaming.com/games/avatar-frontiers-of-pandora-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 29.99
     },
     {
       "id": "bayonetta",
@@ -325,7 +344,8 @@
       "urlStatus": "verified",
       "image": "/covers/bayonetta.jpg",
       "productUrl": "https://www.greenmangaming.com/games/bayonetta-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 19.99
     },
     {
       "id": "black-myth-wukong",
@@ -339,11 +359,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/black-myth-wukong-pc/",
       "note": "The 2024 action blockbuster. High demand keeps pricing firm; watch for seasonal drops.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/black-myth-wukong.jpg",
       "productUrl": "https://www.greenmangaming.com/games/black-myth-wukong-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 59.99
     },
     {
       "id": "call-of-duty-modern-warfare",
@@ -360,7 +381,8 @@
       "urlStatus": "verified",
       "image": "/covers/call-of-duty-modern-warfare.jpg",
       "productUrl": "https://www.greenmangaming.com/games/call-of-duty-modern-warfare-standard-edition-xbox/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 19.39
     },
     {
       "id": "cyberpunk-2077",
@@ -374,11 +396,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/cyberpunk-2077-xbox/",
       "note": "The &#39;Ultimate Edition&#39; bundles the acclaimed Phantom Liberty. Deep, steady discounts.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/cyberpunk-2077.jpg",
       "productUrl": "https://www.greenmangaming.com/games/cyberpunk-2077-xbox/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 59.99
     },
     {
       "id": "demon-slayer-kimetsu-no-yaiba",
@@ -394,7 +417,8 @@
       "urlStatus": "verified",
       "image": "/covers/demon-slayer-kimetsu-no-yaiba.jpg",
       "productUrl": "https://www.greenmangaming.com/games/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-2-deluxe-edition-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 69.99
     },
     {
       "id": "destiny-2-renegades",
@@ -408,7 +432,8 @@
       "urlStatus": "verified",
       "image": "/covers/destiny-2-renegades.jpg",
       "productUrl": "https://www.greenmangaming.com/games/destiny-2-renegades-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 16.99
     },
     {
       "id": "destiny-2-the-collection",
@@ -422,7 +447,8 @@
       "urlStatus": "verified",
       "image": "/covers/destiny-2-the-collection.jpg",
       "productUrl": "https://www.greenmangaming.com/games/destiny-2-the-collection-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 69.6
     },
     {
       "id": "destiny-2-the-edge-of-fate",
@@ -436,7 +462,8 @@
       "urlStatus": "verified",
       "image": "/covers/destiny-2-the-edge-of-fate.jpg",
       "productUrl": "https://www.greenmangaming.com/games/destiny-2-the-edge-of-fate-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 19.99
     },
     {
       "id": "disney-dreamlight-valley",
@@ -452,7 +479,8 @@
       "urlStatus": "verified",
       "image": "/covers/disney-dreamlight-valley.jpg",
       "productUrl": "https://www.greenmangaming.com/games/disney-dreamlight-valley-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 13.93
     },
     {
       "id": "elden-ring",
@@ -465,11 +493,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/elden-ring-pc/",
       "note": "FromSoftware&#39;s open-world epic. Key stores undercut physical; DLC &#39;Shadow of the Erdtree&#39; sold separately.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/elden-ring.jpg",
       "productUrl": "https://www.greenmangaming.com/games/elden-ring-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 39.99
     },
     {
       "id": "final-fantasy-vii-rebirth",
@@ -482,11 +511,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/final-fantasy-vii-rebirth-pc/",
       "note": "The middle chapter of the FFVII remake. New release — first real discounts land months in.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/final-fantasy-vii-rebirth.jpg",
       "productUrl": "https://www.greenmangaming.com/games/final-fantasy-vii-rebirth-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 49.99
     },
     {
       "id": "final-fantasy-xvi",
@@ -499,11 +529,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/final-fantasy-xvi-pc/",
       "note": "Square&#39;s action-Fantasy epic. Steady key-store discounts post-launch.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/final-fantasy-xvi.jpg",
       "productUrl": "https://www.greenmangaming.com/games/final-fantasy-xvi-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 24.99
     },
     {
       "id": "forza-horizon-5",
@@ -516,11 +547,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/forza-horizon-5-xbox/",
       "note": "The墨西哥 open-world racer. Xbox digital codes on GMG routinely beat the MS Store.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/forza-horizon-5.jpg",
       "productUrl": "https://www.greenmangaming.com/games/forza-horizon-5-xbox/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 19.99
     },
     {
       "id": "ghost-of-tsushima",
@@ -533,11 +565,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/ghost-of-tsushima-directors-cut-pc/",
       "note": "Sucker Punch&#39;s samurai epic. Director&#39;s Cut on PS5 sees regular key-store cuts.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/ghost-of-tsushima.jpg",
       "productUrl": "https://www.greenmangaming.com/games/ghost-of-tsushima-directors-cut-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 59.99
     },
     {
       "id": "god-of-war-ragnar-k",
@@ -554,7 +587,8 @@
       "urlStatus": "verified",
       "image": "/covers/god-of-war-ragnar-k.jpg",
       "productUrl": "https://www.greenmangaming.com/games/god-of-war-ragnarok-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 59.99
     },
     {
       "id": "grand-theft-auto-v-enhanced-38-great-white-shark-card-bundle",
@@ -568,7 +602,8 @@
       "urlStatus": "verified",
       "image": "/covers/grand-theft-auto-v-enhanced-38-great-white-shark-card-bundle.jpg",
       "productUrl": "https://www.greenmangaming.com/games/grand-theft-auto-v-enhanced-great-white-shark-card-bundle-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 44.99
     },
     {
       "id": "halo-infinite",
@@ -579,13 +614,14 @@
         "popular",
         "longtail"
       ],
-      "storeUrl": "https://www.greenmangaming.com/search?query=Halo%20Infinite",
+      "storeUrl": "https://www.greenmangaming.com/games/halo-infinite-xbox/",
       "note": "343&#39;s flagship shooter. Campaign + multiplayer; deep key-store discounts.",
-      "lastChecked": "2026-08-05",
-      "urlStatus": "search",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
       "image": "/covers/halo-infinite.jpg",
-      "productUrl": "https://www.greenmangaming.com/search?query=Halo%20Infinite",
-      "originalPrice": 69.99
+      "productUrl": "https://www.greenmangaming.com/games/halo-infinite-xbox/",
+      "originalPrice": 59.99,
+      "price": 59.99
     },
     {
       "id": "helldivers-2",
@@ -599,11 +635,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/helldivers-2-pc/",
       "note": "The surprise 2024 co-op hit. Demand-driven pricing; key stores occasionally undercut.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/helldivers-2.jpg",
       "productUrl": "https://www.greenmangaming.com/games/helldivers-2-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 39.99
     },
     {
       "id": "horizon-forbidden-west",
@@ -616,11 +653,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/horizon-forbidden-west-complete-edition-pc/",
       "note": "Guerrilla&#39;s open-world sequel. PSN digital codes on GMG undercut the store.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/horizon-forbidden-west.jpg",
       "productUrl": "https://www.greenmangaming.com/games/horizon-forbidden-west-complete-edition-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 59.99
     },
     {
       "id": "indiana-jones-and-the-great-circle",
@@ -636,7 +674,8 @@
       "urlStatus": "verified",
       "image": "/covers/indiana-jones-and-the-great-circle.jpg",
       "productUrl": "https://www.greenmangaming.com/games/indiana-jones-and-the-great-circle-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 15.05
     },
     {
       "id": "kingdom-come-deliverance-ii",
@@ -652,7 +691,8 @@
       "urlStatus": "verified",
       "image": "/covers/kingdom-come-deliverance-ii.jpg",
       "productUrl": "https://www.greenmangaming.com/games/kingdom-come-deliverance-ii-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 21.0
     },
     {
       "id": "lego-batman-legacy-of-the-dark-knight",
@@ -666,7 +706,8 @@
       "urlStatus": "verified",
       "image": "/covers/lego-batman-legacy-of-the-dark-knight.jpg",
       "productUrl": "https://www.greenmangaming.com/games/lego-batman-legacy-of-the-dark-knight-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 58.79
     },
     {
       "id": "marvel-t-kon-fighting-souls-ultimate-edition",
@@ -680,7 +721,8 @@
       "urlStatus": "verified",
       "image": "/covers/marvel-t-kon-fighting-souls-ultimate-edition.jpg",
       "productUrl": "https://www.greenmangaming.com/games/marvel-tokon-fighting-souls-ultimate-edition-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 99.99
     },
     {
       "id": "marvels-spider-man-2",
@@ -694,7 +736,8 @@
       "urlStatus": "verified",
       "image": "/covers/marvels-spider-man-2.jpg",
       "productUrl": "https://www.greenmangaming.com/games/marvels-spider-man-2-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 59.99
     },
     {
       "id": "marvels-spider-man-miles-morales",
@@ -710,7 +753,8 @@
       "urlStatus": "verified",
       "image": "/covers/marvels-spider-man-miles-morales.jpg",
       "productUrl": "https://www.greenmangaming.com/games/marvels-spider-man-miles-morales-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 49.99
     },
     {
       "id": "metal-gear-solid-v-the-definitive-experience",
@@ -724,7 +768,8 @@
       "urlStatus": "verified",
       "image": "/covers/metal-gear-solid-v-the-definitive-experience.jpg",
       "productUrl": "https://www.greenmangaming.com/games/metal-gear-solid-v-the-definitive-experience/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 39.99
     },
     {
       "id": "monster-hunter-wilds",
@@ -737,11 +782,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/monster-hunter-wilds-pc/",
       "note": "Capcom&#39;s 2025 hunting epic. New release — first real cuts appear ahead of seasonal events.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/monster-hunter-wilds.jpg",
       "productUrl": "https://www.greenmangaming.com/games/monster-hunter-wilds-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 21.99
     },
     {
       "id": "ratchet-38-clank-rift-apart",
@@ -752,13 +798,14 @@
         "popular",
         "longtail"
       ],
-      "storeUrl": "https://www.greenmangaming.com/search?query=Ratchet%20Clank%20Rift%20Apart",
+      "storeUrl": "https://www.greenmangaming.com/games/ratchet-clank-rift-apart-pc/",
       "note": "Compare editions and current price on Green Man Gaming. Stock and regional pricing vary — verify on the store before buying.",
       "lastChecked": "2026-08-07",
-      "urlStatus": "search",
+      "urlStatus": "verified",
       "image": "/covers/ratchet-38-clank-rift-apart.jpg",
-      "productUrl": "https://www.greenmangaming.com/search?query=Ratchet%20Clank%20Rift%20Apart",
-      "originalPrice": 69.99
+      "productUrl": "https://www.greenmangaming.com/games/ratchet-clank-rift-apart-pc/",
+      "originalPrice": 59.99,
+      "price": 59.99
     },
     {
       "id": "red-dead-redemption-2",
@@ -772,11 +819,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/red-dead-redemption-2-pc/",
       "note": "Rockstar&#39;s western masterpiece. Six years on, it sits at its lowest-ever key price.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/red-dead-redemption-2.jpg",
       "productUrl": "https://www.greenmangaming.com/games/red-dead-redemption-2-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 49.99
     },
     {
       "id": "returnal",
@@ -788,11 +836,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/returnal-pc/",
       "note": "Housemarque&#39;s roguelike shooter. Deep cuts appear well after launch.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/returnal.jpg",
       "productUrl": "https://www.greenmangaming.com/games/returnal-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 59.99
     },
     {
       "id": "rise-of-the-ronin",
@@ -804,11 +853,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/rise-of-the-ronin-pc/",
       "note": "Team Ninja&#39;s open-world action RPG. 2024 release with deepening key-store discounts.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/rise-of-the-ronin.jpg",
       "productUrl": "https://www.greenmangaming.com/games/rise-of-the-ronin-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 21.75
     },
     {
       "id": "silent-hill-townfall",
@@ -822,7 +872,8 @@
       "urlStatus": "verified",
       "image": "/covers/silent-hill-townfall.jpg",
       "productUrl": "https://www.greenmangaming.com/games/silent-hill-townfall-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 37.49
     },
     {
       "id": "star-wars-outlaws-gold-edition",
@@ -838,7 +889,8 @@
       "urlStatus": "verified",
       "image": "/covers/star-wars-outlaws-gold-edition.jpg",
       "productUrl": "https://www.greenmangaming.com/games/star-wars-outlaws-gold-edition-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 109.99
     },
     {
       "id": "sea-of-thieves-castaways-ancient-coin-pack-550-coins",
@@ -854,7 +906,8 @@
       "urlStatus": "verified",
       "image": "/covers/sea-of-thieves-castaways-ancient-coin-pack-550-coins.jpg",
       "productUrl": "https://www.greenmangaming.com/games/sea-of-thieves-castaways-ancient-coin-pack-550-coins-xbox/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 5.81
     },
     {
       "id": "sovereign-tower",
@@ -868,7 +921,8 @@
       "urlStatus": "verified",
       "image": "/covers/sovereign-tower.jpg",
       "productUrl": "https://www.greenmangaming.com/games/sovereign-tower-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 12.57
     },
     {
       "id": "star-fire-eternal-cycle",
@@ -882,7 +936,8 @@
       "urlStatus": "verified",
       "image": "/covers/star-fire-eternal-cycle.jpg",
       "productUrl": "https://www.greenmangaming.com/games/star-fire-eternal-cycle-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 11.04
     },
     {
       "id": "starfield",
@@ -895,11 +950,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/starfield-pc/",
       "note": "Bethesda&#39;s space RPG. 2023 launch; key stores now sit well below launch price.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/starfield.jpg",
       "productUrl": "https://www.greenmangaming.com/games/starfield-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 7.3
     },
     {
       "id": "stellar-blade",
@@ -911,11 +967,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/stellar-blade-pc/",
       "note": "Shift Up&#39;s stylish action game. 2024 release; first real cuts appear months in.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/stellar-blade.jpg",
       "productUrl": "https://www.greenmangaming.com/games/stellar-blade-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 59.99
     },
     {
       "id": "the-last-of-us-part-ii-remastered",
@@ -928,11 +985,12 @@
       ],
       "storeUrl": "https://www.greenmangaming.com/games/the-last-of-us-part-ii-remastered-pc/",
       "note": "The remastered PS5 edition. Steady discounts track the HBO show&#39;s seasons.",
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-07",
       "urlStatus": "verified",
       "image": "/covers/the-last-of-us-part-ii-remastered.jpg",
       "productUrl": "https://www.greenmangaming.com/games/the-last-of-us-part-ii-remastered-pc/",
-      "originalPrice": 69.99
+      "originalPrice": 69.99,
+      "price": 49.99
     },
     {
       "id": "witchspire",
@@ -946,7 +1004,8 @@
       "urlStatus": "verified",
       "image": "/covers/witchspire.jpg",
       "productUrl": "https://www.greenmangaming.com/games/witchspire-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 14.99
     },
     {
       "id": "he-adventures-of-elliot-the-millennium-tales",
@@ -962,7 +1021,8 @@
       "urlStatus": "verified",
       "image": "/covers/he-adventures-of-elliot-the-millennium-tales.jpg",
       "productUrl": "https://www.greenmangaming.com/games/the-adventures-of-elliot-the-millennium-tales-pc/",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 59.99
     },
     {
       "id": "baldurs-gate-ii-enhanced-edition",
@@ -976,10 +1036,11 @@
       "storeUrl": "https://www.humblebundle.com/store/baldurs-gate-ii-enhanced-edition?hmb_source=search_bar",
       "note": "Compare editions and current price on Humble Bundle. Stock and regional pricing vary — verify on the store before buying.",
       "lastChecked": "2026-08-07",
-      "urlStatus": "search",
+      "urlStatus": "verified",
       "image": "/covers/baldurs-gate-ii-enhanced-edition.avif",
       "productUrl": "https://www.humblebundle.com/store/baldurs-gate-ii-enhanced-edition?hmb_source=search_bar",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 19.99
     },
     {
       "id": "ea-sports-fc-25",
@@ -992,11 +1053,12 @@
       ],
       "storeUrl": "https://www.humblebundle.com/store/ea-sports-fc-25-ultimate-edition-switch?hmb_source=search_bar",
       "note": "Humble&#39;s digital store runs frequent promos; previous FC entries hit half-price within months.",
-      "lastChecked": "2026-08-05",
-      "urlStatus": "search",
+      "lastChecked": "2026-08-07",
+      "urlStatus": "verified",
       "image": "/covers/ea-sports-fc-25.avif",
       "productUrl": "https://www.humblebundle.com/store/ea-sports-fc-25-ultimate-edition-switch?hmb_source=search_bar",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 79.99
     },
     {
       "id": "dying-light-2-stay-human-reloaded-edition",
@@ -1012,7 +1074,8 @@
       "urlStatus": "verified",
       "image": "/covers/dying-light-2-stay-human-reloaded-edition.avif",
       "productUrl": "https://www.fanatical.com/en/game/dying-light-2-stay-human",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": null
     },
     {
       "id": "hogwarts-legacy",
@@ -1029,7 +1092,8 @@
       "urlStatus": "verified",
       "image": "/covers/hogwarts-legacy.avif",
       "productUrl": "https://www.fanatical.com/en/game/hogwarts-legacy",
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "price": 8.39
     }
   ]
 }

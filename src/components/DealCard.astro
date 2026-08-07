@@ -32,15 +32,20 @@ const storeName =
 const cover = deal.image ? deal.image : `/covers/${deal.id}.svg`;
 const tags = (deal.tags || []).join(" ");
 
-const cur = deal.price;
+const isAmazon = deal.network === "amazon";
+const cur = deal.price ?? undefined;
 const orig = deal.originalPrice;
 const showPrice = cur !== undefined || orig !== undefined;
+// 亚马逊不展示具体抓取价：只给 MSRP 作参考价，并提示去官网查实时价
 const savingsPct =
-  cur !== undefined && orig !== undefined && cur < orig
+  !isAmazon && cur !== undefined && orig !== undefined && cur < orig
     ? Math.round((1 - cur / orig) * 100)
     : null;
-const priceMain =
-  cur !== undefined
+const priceMain = isAmazon
+  ? orig !== undefined
+    ? `List: $${orig.toFixed(2)}`
+    : ""
+  : cur !== undefined
     ? `$${cur.toFixed(2)}`
     : orig !== undefined
       ? `MSRP $${orig.toFixed(2)}`
@@ -57,7 +62,7 @@ const priceMain =
     showPrice && (
       <div class="price-row">
         <span class="price">{priceMain}</span>
-        {cur !== undefined && orig !== undefined && orig !== cur && (
+        {!isAmazon && cur !== undefined && orig !== undefined && orig !== cur && (
           <span class="regular">${orig.toFixed(2)}</span>
         )}
         {savingsPct !== null && <span class="savings">Save {savingsPct}%</span>}
@@ -65,8 +70,16 @@ const priceMain =
     )
   }
   <p class="note">{deal.note}</p>
-  <AffiliateLink network={deal.network} href={deal.storeUrl} cta={`View on ${storeName}`} />
-  <p class="checked">Last checked: {deal.lastChecked} — verify price on store.</p>
+  <AffiliateLink
+    network={deal.network}
+    href={deal.storeUrl}
+    cta={isAmazon ? "Check price on Amazon" : `View on ${storeName}`}
+  />
+  <p class="checked">
+    {isAmazon
+      ? "Price varies on Amazon — tap to see the current deal."
+      : `Last checked: ${deal.lastChecked} — verify price on store.`}
+  </p>
 </article>
 
 <style>
