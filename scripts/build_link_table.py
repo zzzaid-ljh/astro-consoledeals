@@ -82,7 +82,7 @@ ws2["A1"].font = TITLE_FONT
 ws2.merge_cells("A1:H1")
 
 hdr2 = ["序号", "网站/联盟", "游戏名称", "平台", "标签",
-        "当前商品链接（用来找商品）", "【请回填】联盟推广链接", "回填状态"]
+        "当前商品链接（具体商品页）", "链接状态", "【请回填】联盟推广链接", "回填状态"]
 ws2.append([])
 ws2.append(hdr2)
 hrow2 = ws2.max_row
@@ -94,16 +94,22 @@ for c in range(1, len(hdr2) + 1):
     cell.border = BORDER
 
 # 按 network 分组排序，方便你针对同一家网站批量申请
+# 链接状态配色：predicted 用浅橙提醒用户确认，verified 正常
+FILL_PREDICT = PatternFill("solid", fgColor="FCE4D6")
 deals_sorted = sorted(DEALS, key=lambda d: (NET_ORDER.get(d["network"], 9), d["title"]))
 for i, d in enumerate(deals_sorted, start=1):
     net = d["network"]
+    prod_url = d.get("productUrl", d["storeUrl"])
+    url_status = d.get("urlStatus", "unknown")
+    status_label = {"verified": "已核实", "predicted": "推测·请确认", "unknown": "未知"}.get(url_status, url_status)
     row = [
         i,
         NET_DISPLAY.get(net, net),
         d["title"],
         d["platform"],
         ", ".join(d.get("tags", [])),
-        d["storeUrl"],
+        prod_url,
+        status_label,
         "",   # 回填列
         "",   # 回填状态
     ]
@@ -112,17 +118,25 @@ for i, d in enumerate(deals_sorted, start=1):
     for c in range(1, len(hdr2) + 1):
         cell = ws2.cell(row=rr, column=c)
         cell.border = BORDER
-        cell.alignment = WRAP if c in (3, 5, 6) else (CENTER if c in (1, 2, 4, 8) else WRAP)
-    # 黄底高亮回填列 G
-    gcell = ws2.cell(row=rr, column=7)
-    gcell.fill = FILL_BACK
-    gcell.alignment = WRAP
+        if c == 8:  # 回填列
+            cell.fill = FILL_BACK
+            cell.alignment = WRAP
+        elif c == 6:  # 当前商品链接
+            cell.alignment = WRAP
+        elif c == 7:  # 链接状态
+            cell.alignment = CENTER
+            if url_status == "predicted":
+                cell.fill = FILL_PREDICT
+        elif c in (3, 5):  # 游戏名称、标签
+            cell.alignment = WRAP
+        else:  # 序号/网站/平台/回填状态
+            cell.alignment = CENTER
 
-widths2 = [6, 20, 38, 20, 22, 52, 52, 12]
+widths2 = [6, 20, 38, 20, 22, 50, 14, 50, 12]
 for i, w in enumerate(widths2, start=1):
     ws2.column_dimensions[chr(64 + i)].width = w
 ws2.freeze_panes = "A4"
-ws2.auto_filter.ref = f"A{hrow2}:H{ws2.max_row}"
+ws2.auto_filter.ref = f"A{hrow2}:I{ws2.max_row}"
 
 # ---------- Sheet 3: 填写说明 ----------
 ws3 = wb.create_sheet("③填写说明")
@@ -131,10 +145,14 @@ ws3["A1"].font = TITLE_FONT
 guide = [
     "",
     "1) 先看【①联盟申请清单】 sheet，按里面网址去申请 4 个联盟账号。",
-    "2) 申请通过后，去对应网站搜这个游戏，用你的联盟后台生成『带你追踪ID的推广链接』。",
+    "2) 申请通过后，点开本表『当前商品链接（具体商品页）』列里那行对应的链接，在网站里找到这个商品，用你的联盟后台生成『带你追踪ID的推广链接』。",
     "3) 回到【②游戏链接填报表】，在黄底列『【请回填】联盟推广链接』粘贴该链接；『回填状态』写『已填』。",
     "4) 不用每个都填：先填你已通过的那几家网站对应的行即可，其余留空。",
     "5) 填完后把整个 .xlsx 文件发回给我，我会把链接写进网站（更新 deals.json 的 storeUrl，并按需打开 config.ts 里对应网络的 enabled）。",
+    "",
+    "关于『链接状态』列：",
+    "- 『已核实』：商品页 URL 已逐个联网核实，点开就是正确商品，直接用它生成联盟链接即可。",
+    "- 『推测·请确认』（橙色单元格）：GMG（被反爬保护，无法自动核实）和 Humble（官方商品页未搜到）这两家给的是『按命名规律推测的链接』，点开若是 404 或跳首页，请在该网站搜索框里搜游戏名，用你搜到的真实商品页生成联盟链接。",
     "",
     "注意事项：",
     "- 亚马逊：别手标价格、别用短链（bit.ly等）、文章页必须有 FTC 声明（网站模板已内置）。",
